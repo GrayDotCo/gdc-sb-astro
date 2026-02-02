@@ -1292,8 +1292,83 @@
             "statusCode": 301
         },
         {
-            "source": "/7-practical-applications-for-digital-consumer-intelligence",
-            "destination": "/blog/7-practical-applications-for-digital-market-intelligence",
+            "source": "/blog/how-to-evaluate-and-improve-seo-content-optimization-on-existing-pages",
+            "destination": "/blog",
+            "statusCode": 301
+        },
+        {
+            "source": "/blog/creating-seo-content-a-guide-for-planning-start-to-finish",
+            "destination": "/blog",
+            "statusCode": 301
+        },
+        {
+            "source": "/blog/agile-seo-101-building-a-continuous-improvement-machine-for-seo",
+            "destination": "/blog/scaling-seo-a-framework",
+            "statusCode": 301
+        },
+        {
+            "source": "/blog/7-practical-applications-for-digital-market-intelligence",
+            "destination": "/blog/dmi-turning-everyday-marketing-data-into-game-changing-market-insights",
+            "statusCode": 301
+        },
+        {
+            "source": "/blog/11-benefits-of-seo-for-ecommerce-brands",
+            "destination": "/blog/ecommerce-technical-seo-framework",
+            "statusCode": 301
+        },
+        {
+            "source": "/blog/gray-dot-company-stands-for-bodily-autonomy-with-agencies-for-reproductive-rights",
+            "destination": "/team",
+            "statusCode": 301
+        },
+        {
+            "source": "/impact",
+            "destination": "/team",
+            "statusCode": 301
+        },
+        {
+            "source": "/opinionated-seo-opinions",
+            "destination": "/resources",
+            "statusCode": 301
+        },
+         {
+            "source": "/resources/ccmc-enterprise-seo-case-study",
+            "destination": "/results",
+            "statusCode": 301
+        }
+        {
+            "source": "/resources/eabcs-product-launch-seo-case-study",
+            "destination": "/results",
+            "statusCode": 301
+        }
+        {
+            "source": "/featured",
+            "destination": "/results",
+            "statusCode": 301
+        }
+        {
+            "source": "/products",
+            "destination": "/resources",
+            "statusCode": 301
+        }
+        {
+            "source": "/resources/awareness-report-template",
+            "destination": "/blog/seo-templates-checklists",
+            "statusCode": 301
+        }
+        {
+            "source": "/resources/interest-report-template",
+            "destination": "/blog/seo-templates-checklists",
+            "statusCode": 301
+        }
+        {
+            "source": "/services/analytics-audits",
+            "destination": "/",
+            "statusCode": 301
+        }
+        {
+            "source": "/services/dashboarding-storytelling",
+            "destination": "/",
             "statusCode": 301
         }
     ]
