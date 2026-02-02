@@ -1335,40 +1335,75 @@
             "source": "/resources/ccmc-enterprise-seo-case-study",
             "destination": "/results",
             "statusCode": 301
-        }
+        },
         {
             "source": "/resources/eabcs-product-launch-seo-case-study",
             "destination": "/results",
             "statusCode": 301
-        }
+        },
         {
             "source": "/featured",
             "destination": "/results",
             "statusCode": 301
-        }
+        },
         {
             "source": "/products",
             "destination": "/resources",
             "statusCode": 301
-        }
+        },
         {
             "source": "/resources/awareness-report-template",
             "destination": "/blog/seo-templates-checklists",
             "statusCode": 301
-        }
+        },
         {
             "source": "/resources/interest-report-template",
             "destination": "/blog/seo-templates-checklists",
             "statusCode": 301
-        }
+        },
         {
             "source": "/services/analytics-audits",
             "destination": "/",
             "statusCode": 301
-        }
+        },
         {
             "source": "/services/dashboarding-storytelling",
             "destination": "/",
+            "statusCode": 301
+        },
+        {
+            "source": "/industry/dtc",
+            "destination": "/industry",
+            "statusCode": 301
+        },
+        {
+            "source": "/industry/fintech",
+            "destination": "/industry",
+            "statusCode": 301
+        },
+        {
+            "source": "/industry/healthtech",
+            "destination": "/industry",
+            "statusCode": 301
+        },
+        {
+            "source": "/industry/legaltech",
+            "destination": "/industry",
+            "statusCode": 301
+        },
+        {
+            "source": "/industry/not-for-profit",
+            "destination": "/industry",
+            "statusCode": 301
+        },
+        {
+            "source": "/industry/regulated-industries",
+            "destination": "/industry",
+            "statusCode": 301
+        },
+        {
+            "source": "/industry/ecommerce",
+            "destination": "/industry",
             "statusCode": 301
         }
     ]
