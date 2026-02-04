@@ -1382,6 +1382,16 @@
             "statusCode": 301
         },
         {
+            "source": "/industry/saas",
+            "destination": "/industry",
+            "statusCode": 301
+        },
+        {
+            "source": "/industry/tech-startups",
+            "destination": "/industry",
+            "statusCode": 301
+        },
+        {
             "source": "/industry/healthtech",
             "destination": "/industry",
             "statusCode": 301
