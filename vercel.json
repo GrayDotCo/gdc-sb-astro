@@ -1317,6 +1317,11 @@
             "statusCode": 301
         },
         {
+            "source": "/blog/form-validation-ux-best-practices",
+            "destination": "/blog",
+            "statusCode": 301
+        },
+        {
             "source": "/impact",
             "destination": "/team",
             "statusCode": 301
