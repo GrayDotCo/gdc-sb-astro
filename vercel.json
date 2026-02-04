@@ -52,11 +52,6 @@
             "statusCode": 301
         },
         {
-            "source": "/sitemap.xml",
-            "destination": "https://thegray.company/sitemap-index.xml",
-            "statusCode": 301
-        },
-        {
             "source": "/tips-and-tricks-to-landing-pages",
             "destination": "/blog",
             "statusCode": 301
@@ -78,7 +73,7 @@
         },
         {
             "source": "/services/data",
-            "destination": "/services",
+            "destination": "/",
             "statusCode": 301
         },
         {
@@ -88,7 +83,7 @@
         },
         {
             "source": "/blog/7-practical-applications-for-digital-consumer-intelligence",
-            "destination": "/blog/7-practical-applications-for-digital-market-intelligence",
+            "destination": "/blog/dmi-turning-everyday-marketing-data-into-game-changing-market-insights",
             "statusCode": 301
         },
         {
@@ -143,7 +138,7 @@
         },
         {
             "source": "/results/interest-report-template",
-            "destination": "/resources/interest-report-template",
+            "destination": "/blog/seo-templates-checklists",
             "statusCode": 301
         },
         {
@@ -153,12 +148,12 @@
         },
         {
             "source": "/results/awareness-report-template",
-            "destination": "/resources/awareness-report-template",
+            "destination": "/blog/seo-templates-checklists",
             "statusCode": 301
         },
         {
             "source": "/results/ccmc-enterprise-seo-case-study",
-            "destination": "/resources/ccmc-enterprise-seo-case-study",
+            "destination": "/results",
             "statusCode": 301
         },
         {
@@ -173,7 +168,7 @@
         },
         {
             "source": "/Podcast",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
@@ -183,7 +178,7 @@
         },
         {
             "source": "/opinionated-seo-opinionsLinkedIn",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
@@ -278,7 +273,7 @@
         },
         {
             "source": "/services/seo-investigations",
-            "destination": "/services/seo",
+            "destination": "/services/seo-traffic-investigation",
             "statusCode": 301
         },
         {
@@ -323,32 +318,32 @@
         },
         {
             "source": "/services/google-analytics-gtm-audits-tracking-setup",
-            "destination": "/services/analytics-audits",
+            "destination": "/",
             "statusCode": 301
         },
         {
             "source": "/tactics",
-            "destination": "/services",
+            "destination": "/s",
             "statusCode": 301
         },
         {
             "source": "/software-development",
-            "destination": "/services",
+            "destination": "/",
             "statusCode": 301
         },
         {
             "source": "/software-services/development",
-            "destination": "/services",
+            "destination": "/",
             "statusCode": 301
         },
         {
             "source": "/software-services/training",
-            "destination": "/services",
+            "destination": "/",
             "statusCode": 301
         },
         {
             "source": "/resource/ccmc-enterprise-seo-case-study",
-            "destination": "/resources/ccmc-enterprise-seo-case-study",
+            "destination": "/results",
             "statusCode": 301
         },
         {
@@ -363,12 +358,12 @@
         },
         {
             "source": "/resource/eabcs-product-launch-seo-case-study",
-            "destination": "/resources/eabcs-product-launch-seo-case-study",
+            "destination": "/results",
             "statusCode": 301
         },
         {
             "source": "/resource/awareness-report-template",
-            "destination": "/resources/awareness-report-template",
+            "destination": "/blog/seo-templates-checklists",
             "statusCode": 301
         },
         {
@@ -378,87 +373,87 @@
         },
         {
             "source": "/resource/interest-report-template",
-            "destination": "/resources/interest-report-template",
+            "destination": "/blog/seo-templates-checklists",
             "statusCode": 301
         },
         {
             "source": "/software-services/consulting",
-            "destination": "/services",
+            "destination": "/",
             "statusCode": 301
         },
         {
             "source": "/software-services",
-            "destination": "/services",
+            "destination": "/",
             "statusCode": 301
         },
         {
             "source": "/services/software-consulting",
-            "destination": "/services",
+            "destination": "/",
             "statusCode": 301
         },
         {
             "source": "/services/software-development",
-            "destination": "/services",
+            "destination": "/",
             "statusCode": 301
         },
         {
             "source": "/services/software-trainings",
-            "destination": "/services",
+            "destination": "/",
             "statusCode": 301
         },
         {
             "source": "/services/i-made-this-up",
-            "destination": "/services",
+            "destination": "/",
             "statusCode": 301
         },
         {
             "source": "/canadian-search-engine-marketing",
-            "destination": "/services",
+            "destination": "/",
             "statusCode": 301
         },
         {
             "source": "/restoring-online-reputation",
-            "destination": "/services",
+            "destination": "/",
             "statusCode": 301
         },
         {
             "source": "/affiliate-marketing-right-for-my-business",
-            "destination": "/services",
+            "destination": "/",
             "statusCode": 301
         },
         {
             "source": "/budgets-on-rise-for-social-media",
-            "destination": "/services",
+            "destination": "/",
             "statusCode": 301
         },
         {
             "source": "/services/lead-generation-strategy",
-            "destination": "/services",
+            "destination": "/",
             "statusCode": 301
         },
         {
             "source": "/services/digital-marketing-strategy",
-            "destination": "/services",
+            "destination": "/",
             "statusCode": 301
         },
         {
             "source": "/services/reputation-management",
-            "destination": "/services",
+            "destination": "/",
             "statusCode": 301
         },
         {
             "source": "/software-development-1",
-            "destination": "/services",
+            "destination": "/",
             "statusCode": 301
         },
         {
             "source": "/services/facebook-twitter-youtube-marketing",
-            "destination": "/services",
+            "destination": "/",
             "statusCode": 301
         },
         {
             "source": "/training-services",
-            "destination": "/services",
+            "destination": "/",
             "statusCode": 301
         },
         {
@@ -483,17 +478,17 @@
         },
         {
             "source": "/api/1/performance/settings",
-            "destination": "/products",
+            "destination": "/",
             "statusCode": 301
         },
         {
             "source": "/blog/oseoo-e14-opinions-about-managing-people",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
             "source": "/blog/opinionated-seo-opinions-episode-2-august-2021",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
@@ -503,97 +498,97 @@
         },
         {
             "source": "/blog/o-seo-o-e5-opinions-about-hiring-seo-talent",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
             "source": "/blog/o-seo-o-e3-opinions-about-seo-content",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
             "source": "/blog/o-seo-o-e4-opinions-about-the-future-of-content",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
             "source": "/blog/oseoo-ep7-opinions-about-the-value-of-search-data",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
             "source": "/blog/oseoo-e11-opinions-on-agencies-being-a-force-force-for-good",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
             "source": "/blog/opinionated-seo-opinions-episode-1-july-2021",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
             "source": "/blog/oseoo-e18-opinions-about-scaling-schema",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
             "source": "/blog/o-seo-o-e-15-opinions-about-strategic-content-paid-promotions",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
             "source": "/blog/oseoo-e17-opinions-about-tech-seo-international-sites",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
             "source": "/blog/oseoo-e9-opinions-about-machine-learning-seo",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
             "source": "/blog/o-seo-o-e19-opinions-about-adapting-to-change",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
             "source": "/blog/o-seo-o-e12-opinions-about-evolving-ecommerce-seo-requirements",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
             "source": "/blog/oseoo-e13-opinions-about-video-tech-seo",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
             "source": "/blog/oseoo-e16-opinions-about-leveling-up-tech-audits",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
             "source": "/blog/oseoo-e8-opinions-about-international-seo",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
             "source": "/blog/o-seo-o-tm-e10-opinions-about-in-house-enterprise-seo",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
             "source": "/blog/oseoo-ep-6-opinions-about-smb-seo",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
             "source": "/blog/o-seo-o-e3-opinions-",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
             "source": "/blog/o-",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/resources",
             "statusCode": 301
         },
         {
@@ -678,7 +673,7 @@
         },
         {
             "source": "/blog/hire-seo-consultant-agency-in-house",
-            "destination": "/blog/seo-consultant-vs-agency-vs-in-house-specialists",
+            "destination": "/blog",
             "statusCode": 301
         },
         {
@@ -703,12 +698,12 @@
         },
         {
             "source": "/blog/harmonious-coexistence-how-marketers-and-engineers-can-truly-get-along-and-do-better-work",
-            "destination": "/blog/marketing-vs-engineering",
+            "destination": "/blog",
             "statusCode": 301
         },
         {
             "source": "/asl-seo-questions",
-            "destination": "/blog/is-my-website-ada-compliant-accessibility-tips",
+            "destination": "/blog",
             "statusCode": 301
         },
         {
@@ -793,27 +788,27 @@
         },
         {
             "source": "/agile",
-            "destination": "/blog/agile-seo-101-building-a-continuous-improvement-machine-for-seo",
+            "destination": "/blog/scaling-seo-a-framework",
             "statusCode": 301
         },
         {
             "source": "/blog/a-short-guide-to-digital-marketing-acronyms-amp-lingo",
-            "destination": "/blog/a-short-guide-to-digital-marketing-acronyms-abbreviations",
+            "destination": "/blog",
             "statusCode": 301
         },
         {
             "source": "/resource/7-practical-applications-for-digital-consumer-intelligence",
-            "destination": "/blog/7-practical-applications-for-digital-market-intelligence",
+            "destination": "/blog/dmi-turning-everyday-marketing-data-into-game-changing-market-insights",
             "statusCode": 301
         },
         {
             "source": "/results/7-practical-applications-for-digital-consumer-intelligence",
-            "destination": "/blog/7-practical-applications-for-digital-market-intelligence",
+            "destination": "/blog/dmi-turning-everyday-marketing-data-into-game-changing-market-insights",
             "statusCode": 301
         },
         {
             "source": "/blog/internal-linking-tips",
-            "destination": "/blog",
+            "destination": "blog/internal-linking",
             "statusCode": 301
         },
         {
@@ -823,7 +818,7 @@
         },
         {
             "source": "/how-to-make-easy-money-with-google-adsense",
-            "destination": "/blog",
+            "destination": "/blog/ppc-audit-methodology-an-experts-workflow-real-world-examples",
             "statusCode": 301
         },
         {
@@ -878,7 +873,7 @@
         },
         {
             "source": "/category/advertising-income",
-            "destination": "/blog",
+            "destination": "/blog/ppc-audit-methodology-an-experts-workflow-real-world-examples",
             "statusCode": 301
         },
         {
@@ -1133,12 +1128,12 @@
         },
         {
             "source": "/ask-seo",
-            "destination": "/ask-seo-questions",
+            "destination": "/contact",
             "statusCode": 301
         },
         {
             "source": "/ask",
-            "destination": "/ask-seo-questions",
+            "destination": "/contact",
             "statusCode": 301
         },
         {
@@ -1153,12 +1148,12 @@
         },
         {
             "source": "/services/seo-consulting",
-            "destination": "/",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/experience",
-            "destination": "/",
+            "destination": "/results",
             "statusCode": 301
         },
         {
@@ -1198,52 +1193,52 @@
         },
         {
             "source": "/seo/nyc-web-development",
-            "destination": "/",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/seo-services-in-ny",
-            "destination": "/",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/seo-service-new-york",
-            "destination": "/",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/seo-services-nyc",
-            "destination": "/",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/seo-nyc",
-            "destination": "/",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/organic-search-engine-marketing-agencies",
-            "destination": "/",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/seo-services-in-new-york",
-            "destination": "/",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/seo-in-ny",
-            "destination": "/",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/seo-firm-ny",
-            "destination": "/",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/seo-services-new-york",
-            "destination": "/",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
@@ -1258,12 +1253,12 @@
         },
         {
             "source": "/blog/whats-a-b2b-digital-marketing-seo-strategy-framework",
-            "destination": "/blog/how-to-evaluate-and-improve-seo-content-optimization-on-existing-pages",
+            "destination": "/blog",
             "statusCode": 301
         },
         {
             "source": "/blog/foundation-of-strategic-content",
-            "destination": "/blog/how-to-evaluate-and-improve-seo-content-optimization-on-existing-pages",
+            "destination": "/blog",
             "statusCode": 301
         },
         {
@@ -1283,7 +1278,7 @@
         },
         {
             "source": "/nominate-oseoo-guest",
-            "destination": "/opinionated-seo-opinions",
+            "destination": "/contact",
             "statusCode": 301
         },
         {
@@ -1292,8 +1287,118 @@
             "statusCode": 301
         },
         {
-            "source": "/7-practical-applications-for-digital-consumer-intelligence",
-            "destination": "/blog/7-practical-applications-for-digital-market-intelligence",
+            "source": "/blog/how-to-evaluate-and-improve-seo-content-optimization-on-existing-pages",
+            "destination": "/blog",
+            "statusCode": 301
+        },
+        {
+            "source": "/blog/creating-seo-content-a-guide-for-planning-start-to-finish",
+            "destination": "/blog",
+            "statusCode": 301
+        },
+        {
+            "source": "/blog/agile-seo-101-building-a-continuous-improvement-machine-for-seo",
+            "destination": "/blog/scaling-seo-a-framework",
+            "statusCode": 301
+        },
+        {
+            "source": "/blog/7-practical-applications-for-digital-market-intelligence",
+            "destination": "/blog/dmi-turning-everyday-marketing-data-into-game-changing-market-insights",
+            "statusCode": 301
+        },
+        {
+            "source": "/blog/11-benefits-of-seo-for-ecommerce-brands",
+            "destination": "/blog/ecommerce-technical-seo-framework",
+            "statusCode": 301
+        },
+        {
+            "source": "/blog/gray-dot-company-stands-for-bodily-autonomy-with-agencies-for-reproductive-rights",
+            "destination": "/team",
+            "statusCode": 301
+        },
+        {
+            "source": "/impact",
+            "destination": "/team",
+            "statusCode": 301
+        },
+        {
+            "source": "/opinionated-seo-opinions",
+            "destination": "/resources",
+            "statusCode": 301
+        },
+         {
+            "source": "/resources/ccmc-enterprise-seo-case-study",
+            "destination": "/results",
+            "statusCode": 301
+        },
+        {
+            "source": "/resources/eabcs-product-launch-seo-case-study",
+            "destination": "/results",
+            "statusCode": 301
+        },
+        {
+            "source": "/featured",
+            "destination": "/results",
+            "statusCode": 301
+        },
+        {
+            "source": "/products",
+            "destination": "/resources",
+            "statusCode": 301
+        },
+        {
+            "source": "/resources/awareness-report-template",
+            "destination": "/blog/seo-templates-checklists",
+            "statusCode": 301
+        },
+        {
+            "source": "/resources/interest-report-template",
+            "destination": "/blog/seo-templates-checklists",
+            "statusCode": 301
+        },
+        {
+            "source": "/services/analytics-audits",
+            "destination": "/",
+            "statusCode": 301
+        },
+        {
+            "source": "/services/dashboarding-storytelling",
+            "destination": "/",
+            "statusCode": 301
+        },
+        {
+            "source": "/industry/dtc",
+            "destination": "/industry",
+            "statusCode": 301
+        },
+        {
+            "source": "/industry/fintech",
+            "destination": "/industry",
+            "statusCode": 301
+        },
+        {
+            "source": "/industry/healthtech",
+            "destination": "/industry",
+            "statusCode": 301
+        },
+        {
+            "source": "/industry/legaltech",
+            "destination": "/industry",
+            "statusCode": 301
+        },
+        {
+            "source": "/industry/not-for-profit",
+            "destination": "/industry",
+            "statusCode": 301
+        },
+        {
+            "source": "/industry/regulated-industries",
+            "destination": "/industry",
+            "statusCode": 301
+        },
+        {
+            "source": "/industry/ecommerce",
+            "destination": "/industry",
             "statusCode": 301
         }
     ]
