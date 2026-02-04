@@ -1317,6 +1317,11 @@
             "statusCode": 301
         },
         {
+            "source": "/blog/form-validation-ux-best-practices",
+            "destination": "/blog",
+            "statusCode": 301
+        },
+        {
             "source": "/impact",
             "destination": "/team",
             "statusCode": 301
@@ -1373,6 +1378,16 @@
         },
         {
             "source": "/industry/fintech",
+            "destination": "/industry",
+            "statusCode": 301
+        },
+        {
+            "source": "/industry/saas",
+            "destination": "/industry",
+            "statusCode": 301
+        },
+        {
+            "source": "/industry/tech-startups",
             "destination": "/industry",
             "statusCode": 301
         },
