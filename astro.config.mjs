@@ -68,9 +68,9 @@ export default defineConfig({
     format: 'directory'
   },
   trailingSlash: 'never',
-  // output: buildType === 'preview' ? 'server' : 'static',
-  // adapter: buildType === 'preview' ? vercel() : undefined,
-  output: 'server',
+  output: deployEnv === "production"
+    ? "static"
+    : "server",
   adapter: vercel({
     webAnalytics: {
       enabled: true, // Optional: enables Vercel's analytics tracking
