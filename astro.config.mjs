@@ -11,9 +11,15 @@ const env = loadEnv("", process.cwd(), ["STORYBLOK", "PUBLIC"]);
 const isDevelopment = process.env.NODE_ENV === 'development' || process.argv.includes('dev');
 const buildType = process.env.BUILD_TYPE;
 
+const siteUrl =
+  env.PUBLIC_SITE_URL ??
+  (deployEnv === "development"
+    ? "https://dev.thegray.company"
+    : "https://thegray.company");
+
 // https://astro.build/config
 export default defineConfig({
-  site: isDevelopment ? 'https://dev.thegray.company' : 'https://thegray.company',
+  site: siteUrl,
   integrations: [storyblok({
     accessToken: env.STORYBLOK_TOKEN,
     apiOptions: {
