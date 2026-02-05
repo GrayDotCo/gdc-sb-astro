@@ -380,13 +380,14 @@ textarea {
 }
 
 .check-consent input {
-  margin-bottom: 0;
   min-height: 1.5rem;
   position: absolute;
+  margin: 0;
+  left: 0;
   opacity: 0;
   cursor: pointer;
-  height: 0;
-  width: 0;
+  height: 24px;
+  width: 24px;
 }
 
 .check-consent .checkmark {
@@ -398,6 +399,7 @@ textarea {
   border: 1px solid var(--util-grey);
   border-radius: 5px;
   transition: ease-out .2s;
+  pointer-events: none;
 }
 
 .check-consent:hover input ~ .checkmark {
