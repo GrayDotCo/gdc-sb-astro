@@ -3,13 +3,14 @@ import { useStoryblokApi } from "@storyblok/astro";
 import StoryblokComponent from "@storyblok/astro/StoryblokComponent.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
+export const deployEnv = import.meta.env.PUBLIC_DEPLOY_ENV ?? "production";
+export const isDraft = deployEnv !== "production";
+
 export async function getStaticPaths() {
   const storyblokApi = useStoryblokApi();
 
   const version =
-    import.meta.env.DEV || import.meta.env.BUILD_TYPE === "preview"
-      ? "draft"
-      : "published";
+    isDraft ? "draft" : "published";
 
   const data = await storyblokApi.getAll("cdn/stories", { version });
 
@@ -40,9 +41,7 @@ const { slug } = Astro.params;
 const storyblokApi = useStoryblokApi();
 
 const version =
-  import.meta.env.DEV || import.meta.env.BUILD_TYPE === "preview"
-    ? "draft"
-    : "published";
+  isDraft ? "draft" : "published";
 
 let story;
 let storySEO;
