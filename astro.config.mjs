@@ -7,8 +7,10 @@ import vercel from "@astrojs/vercel";
 // PUBLIC_DEPLOY_ENV should be one of: development, preview, production.
 const mode = process.env.NODE_ENV ?? (process.argv.includes("dev") ? "development" : "production");
 const env = loadEnv(mode, process.cwd(), ["STORYBLOK", "PUBLIC"]);
-const deployEnv = env.PUBLIC_DEPLOY_ENV ?? "production";
 
+const deployEnv =
+  env.PUBLIC_DEPLOY_ENV ??
+  mode;
 
 const siteUrl =
   env.PUBLIC_SITE_URL ??
