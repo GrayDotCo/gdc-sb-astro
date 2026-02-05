@@ -486,6 +486,7 @@ textarea {
   text-decoration: none;
   cursor: pointer;
   border: none;
+  transition: ease-out .2s;
 }
 
 .btnSecondary {
