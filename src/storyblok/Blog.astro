@@ -13,12 +13,16 @@ const category = blok.category || "hero-teal";
 
 // Fetch the full author data
 const storyblokApi = useStoryblokApi();
+const authorUuids = blok.authors ?? [];
 const { data } = await storyblokApi.get("cdn/stories", {
-  by_uuids: blok.authors.join(","),
+  by_uuids: authorUuids.join(","),
   version: "published",
 });
 
-const authors = data.stories;
+const authors = (data.stories ?? []).sort((a, b) => {
+  if (!a.uuid || !b.uuid) return 0;
+  return authorUuids.indexOf(a.uuid) - authorUuids.indexOf(b.uuid);
+});
 ---
 
 <BlogSchema 
