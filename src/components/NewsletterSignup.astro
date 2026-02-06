@@ -3,74 +3,107 @@ import { Image } from "astro:assets";
 import traph from "../images/traph.png";
 ---
 
+<!-- JS -->
+<script>
+  window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+  window.LOCALE = 'en';
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+  window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
+  window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+
+  window.translation = {
+    common: {
+      selectedList: '{quantity} list selected',
+      selectedLists: '{quantity} lists selected',
+      selectedOption: '{quantity} selected',
+      selectedOptions: '{quantity} selected',
+    }
+  };
+
+  var AUTOHIDE = Boolean(0);
+</script>
+
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+<!-- End JS -->
+
+<!-- Styling -->
+<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+<style>
+.sib-form {
+  background-attachment: fixed;
+  font-size: unset;
+  font-family: unset;
+  padding: unset;
+  margin: unset;
+}
+
+#sib-container {
+  padding: unset;
+}
+
+#sib-container .blok-title {
+  padding-bottom: 24px;
+}
+
+#sib-container .btnPrimary {
+  margin-bottom: 0.5rem;
+}
+
+.img-left #sib-container div:last-child {
+  order: unset;
+  margin-bottom: unset;
+}
+
+</style>
+<!-- End Styling -->
+
+
 <section class="align-middle img-left newsletter">
   <div class="ipu">
-    <div>
-      <p class="blok-title">Stay In the Know</p>
-      <div id="mc_embed_shell">
-        <div id="mc_embed_signup">
-          <form
-            action="https://company.us1.list-manage.com/subscribe/post?u=855adde0ea19b41028f9c3595&id=2a74a6b875&f_id=003f93e5f0"
-            method="post"
-            id="mc-embedded-subscribe-form"
-            name="mc-embedded-subscribe-form"
-            class="validate"
-            target="_self"
-            novalidate=""
-          >
-            <div id="mc_embed_signup_scroll">
-              <div class="mc-field-group">
-                <label for="mce-EMAIL">Email</label><input
-                  type="email"
-                  name="EMAIL"
-                  class="required email"
-                  id="mce-EMAIL"
-                  required=""
-                  value=""
-                />
-              </div>
-              <div id="mce-responses" class="clear">
-                <div
-                  class="response"
-                  id="mce-error-response"
-                  style="display: none;"
-                >
-                </div>
-                <div
-                  class="response"
-                  id="mce-success-response"
-                  style="display: none;"
-                >
-                </div>
-              </div><div
-                aria-hidden="true"
-                style="position: absolute; left: -5000px;"
-              >
-                <input
-                  type="text"
-                  name="b_855adde0ea19b41028f9c3595_2a74a6b875"
-                  tabindex="-1"
-                  value=""
-                />
-              </div><div class="clear">
-                <input
-                  type="submit"
-                  name="subscribe"
-                  id="mc-embedded-subscribe"
-                  class="btnPrimary"
-                  value="Join the Mailing List"
-                />
+    <div class="sib-form">
+      <div id="sib-form-container">
+        <div id="sib-container" class="sib-container--large sib-container--vertical">
+          <form id="sib-form" method="POST" action="https://57f8bdea.sibforms.com/serve/MUIFAGpGWN0VdtuZaameIxyWWgaaxLHjuftQHlP7GYeq8AiDFSWtyKVUdoT1l06nn7Qds1bXtAf-Dq0VPVYz0xNHutZBqYIkHgkkHTPQynOfTI22f2Z-oFf5cgKJwGaXR_IF927g4qdlHGd4ZHn4ckm0RoWP1mHmVI_LDD5rRpKvxwrtg_u83-k98abod8LV4Y_eTW6M4vZMQZho" data-type="subscription">
+            <div>
+              <div class="">
+                <p class="blok-title">Stay in the know</p>
               </div>
             </div>
+            <div>
+              <div class="sib-input ">
+                <div class="form__entry entry_block">
+                  <div class="form__label-row ">
+                    <div class="">
+                      <input class="required email" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
+                    </div>
+                  </div>
+
+                  <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="">
+                <button class="btnPrimary" form="sib-form" type="submit">
+                  <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                    <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                  </svg>
+                  Join the mailing list
+                </button>
+              </div>
+              <p class="footnote" data-astro-source-file="/home/josh/Downloads/thegray.company/gdc-sb-astro_brevo/src/components/NewsletterSignup.astro" data-astro-source-loc="180:29">
+                You can unsubscribe at any time using the link in our emails. For more details, review our <a href="/privacy" target="_blank" data-astro-source-file="/home/josh/Downloads/thegray.company/gdc-sb-astro_brevo/src/components/NewsletterSignup.astro" data-astro-source-loc="183:14">privacy policy.</a>
+              </p>
+            </div>
+
+            <input type="text" name="email_address_check" value="" class="input--hidden">
+            <input type="hidden" name="locale" value="en">
           </form>
         </div>
-        <p class="footnote">
-          You can unsubscribe at any time using the link in our emails. For more
-          details, review our <a href="/privacy" target="_blank"
-            >privacy policy.</a>
-        </p>
       </div>
     </div>
+
     <div>
         <Image
         src={traph}
