@@ -5,12 +5,15 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import NewsletterSignup from "../../components/NewsletterSignup.astro"
 import SocialShare from "../../components/SocialShare.astro"
 
+export const deployEnv = import.meta.env.PUBLIC_DEPLOY_ENV ?? "production";
+export const isDraft = deployEnv !== "production";
+
 export async function getStaticPaths() {
   const storyblokApi = useStoryblokApi();
 
   const data = await storyblokApi.getAll("cdn/stories", {
     content_type: "blog",
-    version: import.meta.env.DEV ? "draft" : "published",
+    version: isDraft ? "draft" : "published",
     resolve_links: 'story',
   });
 
@@ -25,7 +28,7 @@ const storyblokApi = useStoryblokApi();
 const { slug } = Astro.params;
 
 const { data } = await storyblokApi.get(`cdn/stories/blog/${slug}`, {
-  version: import.meta.env.DEV ? "draft" : "published",
+  version: isDraft ? "draft" : "published",
   resolve_links: "url",
 });
 

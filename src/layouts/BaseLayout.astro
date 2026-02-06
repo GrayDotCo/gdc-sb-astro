@@ -10,11 +10,13 @@ import '@fontsource/poppins/600.css';
 import '@fontsource/poppins/700.css';
 
 const { title, description, ogImage, metaRobots, customStructuredData } = Astro.props;
+const deployEnv = import.meta.env.PUBLIC_DEPLOY_ENV ?? "production";
+const isDraft = deployEnv !== "production";
 
 const storyblokApi = useStoryblokApi();
 
 const { data } = await storyblokApi.get("cdn/stories/config", {
-  version: import.meta.env.DEV ? "draft" : "published",
+  version: isDraft ? "draft" : "published",
   resolve_links: "url",
 });
 ---
