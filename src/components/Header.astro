@@ -1,22 +1,14 @@
 ---
-import { useStoryblokApi } from '@storyblok/astro'
 import { Image } from "astro:assets";
 import fullLogo from "../images/color_logo.svg";
 
-const storyblokApi = useStoryblokApi()
-const { data } = await storyblokApi.get('cdn/stories/config', {
-  version: 'draft',
-  resolve_links: 'url',
-})
-
-const nav_items = data.story.content.header_menu;
 ---
 
 <header>
   <a class="logo" href="/">
     <Image src={fullLogo} alt="Gray Dot Co Logo"  height="34" />
   </a>
-    
+
   <nav x-data="{ isOpen: false }">
     <div class="menu-button" @click="isOpen = !isOpen">
       <img class="menu-open" x-show="!isOpen" src="https://thegray.company/img/ic_menu_open.svg" width="48" height="48" alt="Open menu icon" />
