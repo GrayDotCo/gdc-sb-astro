@@ -12,6 +12,9 @@ const { title, description, ogImage, metaRobots, customStructuredData } = Astro.
 const deployEnv = import.meta.env.PUBLIC_DEPLOY_ENV ?? "production";
 const isDraft = deployEnv !== "production";
 
+console.log('PUBLIC_DEPLOY_ENV: ', import.meta.env.PUBLIC_DEPLOY_ENV);
+console.log('deployEnv: ', deployEnv);
+
 ---
 
 <html lang="en">
