@@ -25,7 +25,7 @@ const authors = (data.stories ?? []).sort((a, b) => {
 });
 ---
 
-<BlogSchema 
+<BlogSchema
   title={blok.title}
   description={blok.teaser}
   publish_date={blok.publish_date}
@@ -90,8 +90,8 @@ const authors = (data.stories ?? []).sort((a, b) => {
               {author.content.Headshot?.filename && (
                 <img
                   src={author.content.Headshot.filename.startsWith('http') ? transformImageSrc(`${author.content.Headshot.filename}/m/120x120 `) : author.content.Headshot.filename}
-                  srcset={author.content.Headshot.filename.startsWith('http') ? 
-                    `${transformImageSrc(`${author.content.Headshot.filename}/m/120x120`)} 1x, ${transformImageSrc(`${author.content.Headshot.filename}/m/240x240`)} 2x` : 
+                  srcset={author.content.Headshot.filename.startsWith('http') ?
+                    `${transformImageSrc(`${author.content.Headshot.filename}/m/120x120`)} 1x, ${transformImageSrc(`${author.content.Headshot.filename}/m/240x240`)} 2x` :
                     author.content.Headshot.filename}
                   alt={author.content.Name || 'Author'}
                   class="profile"

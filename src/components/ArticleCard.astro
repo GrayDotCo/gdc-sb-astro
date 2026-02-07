@@ -2,7 +2,7 @@
 import { transformImageSrc } from "../utils/imageUtils";
 const { blog, slug } = Astro.props
 ---
- 
+
 <a class="card-img-text" href={`/blog/${slug}`} title={`${blog.title}`}>
   <img class="img-aspect" src={transformImageSrc(`${blog.featured_image.filename}`)} alt={blog.featured_image.alt} width="450" height="293" />
   <h3>{blog.title}</h3>

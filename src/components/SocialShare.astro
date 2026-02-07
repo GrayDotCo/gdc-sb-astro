@@ -1,13 +1,4 @@
 ---
-import { useStoryblokApi } from '@storyblok/astro'
-
-const storyblokApi = useStoryblokApi()
-const { data } = await storyblokApi.get('cdn/stories/config', {
-  version: 'draft',
-  resolve_links: 'url',
-})
-
-const articleName = data.story.content.title;
 ---
 
 <section id="spread-the-word" class="bg-grey align-middle">
