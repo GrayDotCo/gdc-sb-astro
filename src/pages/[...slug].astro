@@ -20,12 +20,12 @@ export async function getStaticPaths() {
       if (story.content.component === "testimonial") {
         return false;
       }
-      
+
       // For authors, check the custom boolean field
       if (story.content.component === "author") {
         return story.content.profile_page === true;
       }
-      
+
       // Include all other story types
       return true;
     })
@@ -52,7 +52,7 @@ try {
     resolve_links: "url",
     resolve_relations: ['featured_blogs.blogs'],
   });
-  
+
   story = data.story;
 
   if (
