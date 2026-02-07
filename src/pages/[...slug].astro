@@ -55,13 +55,6 @@ try {
 
   story = data.story;
 
-  if (
-    !story.content.page_title ||
-    !story.content.meta_description
-  ) {
-    throw new Error(`Missing required SEO fields for ${slug}`);
-  }
-
   storySEO = {
     title: story.content.page_title,
     description: story.content.meta_description,
