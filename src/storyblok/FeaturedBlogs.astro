@@ -5,7 +5,8 @@ import { transformImageSrc } from "../utils/imageUtils";
 const { blok } = Astro.props;
 const TitleElement = blok.heading_level || "p";
 const wrapClass = blok.blog_number || "wrap-three";
-const blogs = blok.blogs;
+// Unpublished/Draft blogs return as UUID instead of story object
+const blogs = blok.blogs?.filter((blog) => typeof blog === "object" && blog.content);
 ---
 
 <section {...storyblokEditable(blok)} class="ipu featured-blogs">
