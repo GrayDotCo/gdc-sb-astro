@@ -13,9 +13,9 @@ const devRobots = `User-agent: *
 Disallow: /
 `;
 
-export const GET: APIRoute = () => {
-  const isMainDomain = import.meta.env.SITE?.includes("thegray.company") &&
-    !import.meta.env.SITE?.includes("dev.thegray.company");
+export const GET: APIRoute = ({ url }) => {
+  const isMainDomain = url.hostname === "thegray.company" &&
+    process.env.VERCEL_ENV === "production";
 
   return new Response(isMainDomain ? prodRobots : devRobots, {
     headers: { "Content-Type": "text/plain" },
