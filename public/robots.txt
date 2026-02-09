@@ -1,7 +1,0 @@
-User-agent: *
-Disallow: /cdn-fpw/*
-Disallow: /cdn-cgi/*
-Disallow: /_vercel/insights/*
-Allow: /
-
-Sitemap: https://thegray.company/sitemap-index.xml
