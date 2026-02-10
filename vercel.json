@@ -1277,6 +1277,26 @@
             "statusCode": 301
         },
         {
+            "source": "/blog/a-short-guide-to-digital-marketing-acronyms-abbreviations",
+            "destination": "/blog",
+            "statusCode": 301
+        },
+        {
+            "source": "/blog/marketing-vs-engineering",
+            "destination": "/blog",
+            "statusCode": 302
+        },
+        {
+            "source": "/blog/perspective-what-exactly-does-strategy-mean-and-what-should-one-contain",
+            "destination": "/blog",
+            "statusCode": 302
+        },
+        {
+            "source": "/blog/seo-consultant-vs-agency-vs-in-house-specialists",
+            "destination": "/blog",
+            "statusCode": 301
+        },
+        {
             "source": "/resources/ccmc-enterprise-seo-case-study",
             "destination": "/results",
             "statusCode": 301
