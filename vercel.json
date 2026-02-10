@@ -1277,6 +1277,11 @@
             "statusCode": 301
         },
         {
+            "source": "/blog/mozcon-2025-nyc",
+            "destination": "/blog",
+            "statusCode": 301
+        },
+        {
             "source": "/blog/a-short-guide-to-digital-marketing-acronyms-abbreviations",
             "destination": "/blog",
             "statusCode": 301
@@ -1294,6 +1299,16 @@
         {
             "source": "/blog/seo-consultant-vs-agency-vs-in-house-specialists",
             "destination": "/blog",
+            "statusCode": 301
+        },
+        {
+            "source": "/blog/seo-templates",
+            "destination": "/blog/seo-templates-checklists",
+            "statusCode": 301
+        },
+        {
+            "source": "/blog/seo-product-requirements-how-to-template.",
+            "destination": "/blog/seo-product-requirements-how-to-template",
             "statusCode": 301
         },
         {
