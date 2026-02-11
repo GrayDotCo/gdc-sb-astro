@@ -11,8 +11,8 @@ import fullLogo from "../images/color_logo.svg";
 
   <nav x-data="{ isOpen: false }">
     <div class="menu-button" @click="isOpen = !isOpen">
-      <img class="menu-open" x-show="!isOpen" src="https://thegray.company/img/ic_menu_open.svg" width="48" height="48" alt="Open menu icon" />
-      <img class="menu-close" x-show="isOpen" src="https://thegray.company/img/ic_menu_close.svg" width="48" height="48" alt="Close menu icon" />
+      <img class="menu-open" x-show="!isOpen" src="/img/ic_menu_open.svg" width="48" height="48" alt="Open menu icon" />
+      <img class="menu-close" x-show="isOpen" src="/img/ic_menu_close.svg" width="48" height="48" alt="Close menu icon" />
     </div>
 
     <div class="menu-container" :class="{ 'hidden': !isOpen }">
