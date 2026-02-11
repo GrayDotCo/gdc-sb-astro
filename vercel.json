@@ -1,7 +1,24 @@
 {
     "trailingSlash": false,
-    "redirects": [
+    "headers": [
+        {
+            "source": "/(.*)",
+            "has": [
                 {
+                    "type": "host",
+                    "value": "(?!thegray.company).*"
+                }
+            ],
+            "headers": [
+                {
+                    "key": "X-Robots-Tag",
+                    "value": "noindex, nofollow"
+                }
+            ]
+        }
+    ],
+    "redirects": [
+        {
             "source": "/scale",
             "destination": "/blog/scaling-seo-a-framework",
             "statusCode": 301
