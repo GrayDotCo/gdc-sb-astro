@@ -3,6 +3,7 @@ import { loadEnv } from "vite";
 import basicSsl from "@vitejs/plugin-basic-ssl";
 import { defineConfig } from 'astro/config';
 import vercel from "@astrojs/vercel";
+import { serverLog } from "./src/lib/server/debug";
 
 // PUBLIC_DEPLOY_ENV should be one of: development, preview, production.
 const mode = process.env.NODE_ENV ?? (process.argv.includes("dev") ? "development" : "production");
@@ -17,6 +18,10 @@ const siteUrl =
   (deployEnv === "development"
     ? "https://dev.thegray.company"
     : "https://thegray.company");
+
+
+serverLog('PUBLIC_DEPLOY_ENV:', env.PUBLIC_DEPLOY_ENV);
+serverLog('deployEnv:', deployEnv);
 
 // https://astro.build/config
 export default defineConfig({
