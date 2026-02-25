@@ -1294,6 +1294,11 @@
             "statusCode": 301
         },
         {
+            "source": "/blog/mozcon-2025",
+            "destination": "/blog",
+            "statusCode": 301
+        },
+        {
             "source": "/blog/mozcon-2025-nyc",
             "destination": "/blog",
             "statusCode": 301
