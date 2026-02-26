@@ -19,6 +19,26 @@
     ],
     "redirects": [
         {
+            "source": "/sitemap.xml",
+            "destination": "/sitemap-index.xml",
+            "statusCode": 301
+        },
+        {
+            "source": "/sitemaps.xml",
+            "destination": "/sitemap-index.xml",
+            "statusCode": 301
+        },
+        {
+            "source": "/sitemap_index.xml",
+            "destination": "/sitemap-index.xml",
+            "statusCode": 301
+        },
+        {
+            "source": "/sitemap.xml.gz",
+            "destination": "/sitemap-index.xml",
+            "statusCode": 301
+        },
+        {
             "source": "/scale",
             "destination": "/blog/scaling-seo-a-framework",
             "statusCode": 301
@@ -759,8 +779,18 @@
             "statusCode": 301
         },
         {
+            "source": "/blog/seo-javascript",
+            "destination": "/blog/seo-javascript-audit-guide",
+            "statusCode": 301
+        },
+        {
             "source": "/blog/information-",
             "destination": "/blog/information-architecture-practices-seo-ux",
+            "statusCode": 301
+        },
+        {
+            "source": "/blog/implement",
+            "destination": "/blog/implement-schema-avoid-mistakes",
             "statusCode": 301
         },
         {
@@ -1269,8 +1299,18 @@
             "statusCode": 301
         },
         {
+            "source": "/blog/seo-templ",
+            "destination": "/blog/seo-templates-checklists",
+            "statusCode": 301
+        },
+        {
             "source": "/blog/cross-domain-tracking-guide",
             "destination": "/blog/marketing-measurement-plan",
+            "statusCode": 301
+        },
+        {
+            "source": "/blog/startup-seo",
+            "destination": "/blog",
             "statusCode": 301
         },
         {
@@ -1509,8 +1549,13 @@
             "statusCode": 301
         },
         {
+            "source": "/stories/canonicals-101",
+            "destination": "/blog/seo-guide-crawling-indexing-robots-txt-robots-meta-canonicals",
+            "statusCode": 301
+        },
+        {
             "source": "/stories/all-about-canonicals-common-mistakes",
-            "destination": "/blog",
+            "destination": "/blog/seo-guide-crawling-indexing-robots-txt-robots-meta-canonicals",
             "statusCode": 301
         }
     ]
