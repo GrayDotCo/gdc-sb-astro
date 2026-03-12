@@ -1093,6 +1093,11 @@ article section.hero-color h1.headline {
   margin-bottom: 1rem;
 }
 
+.bg-grey.img-left > div:last-child {
+  /* Fixes a bug where two grey blocks have a white gap between them */
+  margin-bottom: 0px;
+}
+
 iframe {
   border-radius: 10px;
   width: 100%;
