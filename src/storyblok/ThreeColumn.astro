@@ -6,6 +6,7 @@ import Wysiwyg from './Wysiwyg.astro'
 const { blok } = Astro.props
 const TitleElement = blok.heading_level || 'p'
 const Alignment = blok.alignment || 'align-center'
+const bgcolor = blok.bgcolor || "white";
 
 let href = null
 let target = null
@@ -21,7 +22,7 @@ if (blok.link) {
 }
 ---
 
-  <section {...storyblokEditable(blok)} class={`inner-section ${Alignment}`}>
+  <section {...storyblokEditable(blok)} class={`inner-section ${Alignment} bg-${bgcolor}`}>
     <div class="ipu">
         {(blok.prehead || blok.headline) && (
             <div>

@@ -5,11 +5,13 @@ import { transformImageSrc } from "../utils/imageUtils";
 const { blok } = Astro.props;
 const TitleElement = blok.heading_level || "p";
 const wrapClass = blok.blog_number || "wrap-three";
+const bgcolor = blok.bgcolor || "white";
+
 // Unpublished/Draft blogs return as UUID instead of story object
 const blogs = blok.blogs?.filter((blog) => typeof blog === "object" && blog.content);
 ---
 
-<section {...storyblokEditable(blok)} class="ipu featured-blogs">
+<section {...storyblokEditable(blok)} class={`ipu featured-blogs bg-${bgcolor}`}>
   <p class="prehead">{blok.prehead}</p>
   <TitleElement class="blok-title">{blok.headline}</TitleElement>
   <div class={`flex-wrap ${wrapClass}`}>
