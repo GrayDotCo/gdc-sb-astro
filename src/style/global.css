@@ -1305,6 +1305,10 @@ section .card-teal ul li {
   display: block;
 }
 
+.testimonials .ipu {
+  flex-direction: column;
+}
+
 .bg-grey .card-testimonial {
   background: var(--white);
 }
@@ -1877,8 +1881,7 @@ section#article.post-body img {
     }
 }
 
-.featured-blogs {
-  display: flex;
+.featured-blogs .ipu {
   flex-direction: column;
 }
 

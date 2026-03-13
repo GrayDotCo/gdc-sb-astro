@@ -16,15 +16,17 @@ const { data } = await storyblokApi.get("cdn/stories", {
 const testimonials = data.stories;
 ---
 
-<section {...storyblokEditable(blok)} class="no-padding ipu testimonials">
-  <p class="prehead">{blok.prehead}</p>
-  <TitleElement class="blok-title">{blok.headline}</TitleElement>
+<section {...storyblokEditable(blok)} class="no-padding testimonials">
+  <div class="ipu">
+    <p class="prehead">{blok.prehead}</p>
+    <TitleElement class="blok-title">{blok.headline}</TitleElement>
 
-  <div class="col-flex-row y-scroll align-center">
-    {
-      testimonials?.map((testimonial) => {
-        return <CardTestimonial testimonial={testimonial.content} />;
-      })
-    }
+    <div class="col-flex-row y-scroll align-center">
+      {
+        testimonials?.map((testimonial) => {
+          return <CardTestimonial testimonial={testimonial.content} />;
+        })
+      }
+    </div>
   </div>
 </section>
