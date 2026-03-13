@@ -11,27 +11,29 @@ const bgcolor = blok.bgcolor || "white";
 const blogs = blok.blogs?.filter((blog) => typeof blog === "object" && blog.content);
 ---
 
-<section {...storyblokEditable(blok)} class={`ipu featured-blogs bg-${bgcolor}`}>
-  <p class="prehead">{blok.prehead}</p>
-  <TitleElement class="blok-title">{blok.headline}</TitleElement>
-  <div class={`flex-wrap ${wrapClass}`}>
-    {
-      blogs?.map((blog) => {
-        return (
-          <a class="card-img-text" href={`/blog/${blog.slug}`}>
-            <img
-              class="img-aspect"
-              src={transformImageSrc(`${blog.content.featured_image.filename}/m/`)}
-              alt={blog.content.title}
-              width="450"
-              height="293"
-            />
-            <h4>{blog.content.title}</h4>
-            <p>{blog.content.teaser}</p>
-            <p class="btnTertiary">Read the blog ></p>
-          </a>
-        );
-      })
-    }
+<section {...storyblokEditable(blok)} class={`featured-blogs bg-${bgcolor}`}>
+  <div class="ipu">
+    <p class="prehead">{blok.prehead}</p>
+    <TitleElement class="blok-title">{blok.headline}</TitleElement>
+    <div class={`flex-wrap ${wrapClass}`}>
+      {
+        blogs?.map((blog) => {
+          return (
+            <a class="card-img-text" href={`/blog/${blog.slug}`}>
+              <img
+                class="img-aspect"
+                src={transformImageSrc(`${blog.content.featured_image.filename}/m/`)}
+                alt={blog.content.title}
+                width="450"
+                height="293"
+              />
+              <h4>{blog.content.title}</h4>
+              <p>{blog.content.teaser}</p>
+              <p class="btnTertiary">Read the blog ></p>
+            </a>
+          );
+        })
+      }
+    </div>
   </div>
 </section>
