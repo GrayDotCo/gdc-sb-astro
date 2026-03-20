@@ -54,6 +54,11 @@
             "statusCode": 301
         },
         {
+            "source": "/ai-impact",
+            "destination": "/ai-impact-seo",
+            "statusCode": 301
+        },
+        {
             "source": "/ticket",
             "destination": "https://docs.google.com/document/d/1jbiEg1JwRqPXWh629BcUJjNrFpT290F4pUFWmHWIGCE/edit#heading=h.ndxkfhajl5az",
             "statusCode": 301
