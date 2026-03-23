@@ -1,0 +1,48 @@
+---
+import { storyblokEditable } from "@storyblok/astro";
+import { transformImageSrc } from "../utils/imageUtils";
+
+const { blok } = Astro.props;
+const TitleElement = blok.Heading_level || "h2";
+
+let href = null;
+let target = null;
+if (blok.Link) {
+  if (blok.Link.linktype === "url") {
+    href = blok.Link.url;
+  } else if (blok.Link.linktype === "story" && blok.Link.story) {
+    href = "/" + blok.Link.story.full_slug;
+  }
+  if (blok.Link.target) {
+    target = blok.Link.target;
+  }
+}
+
+const bgSrc = blok.Background_image?.filename
+  ? transformImageSrc(`${blok.Background_image.filename}/m/`)
+  : null;
+---
+
+<section {...storyblokEditable(blok)} class="image-cta">
+  <div class="ipu image-cta-inner">
+    <div class="image-cta-bg-wrap">
+      {bgSrc && (
+        <img
+          class="image-cta-feature"
+          src={bgSrc}
+          alt={blok.Background_image.alt || ""}
+        />
+      )}
+    </div>
+    <div class="image-cta-content">
+      {blok.Prehead && <p class="prehead">{blok.Prehead}</p>}
+      <TitleElement class="headline">{blok.Headline_text}</TitleElement>
+      {blok.Description_text && <p>{blok.Description_text}</p>}
+      {blok.Button_text && (
+        <a href={href} target={target} class="btnPrimary">
+          {blok.Button_text}
+        </a>
+      )}
+    </div>
+  </div>
+</section>

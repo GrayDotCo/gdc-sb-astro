@@ -45,6 +45,7 @@ export default defineConfig({
       fourup: "storyblok/FourUp",
       hero: "storyblok/Hero",
       iconcard: "storyblok/IconCard",
+      cta: "storyblok/Cta",
       image: "storyblok/Image",
       leftright: "storyblok/LeftRight",
       listitem: "storyblok/Listitem",
