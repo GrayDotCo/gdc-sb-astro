@@ -1030,6 +1030,11 @@ article section.hero-color h1.headline {
     padding: 2rem 0;
   }
 
+  .image-cta-inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .image-cta-content {
     padding-bottom: 6rem;
     padding-top: 3rem;
@@ -1040,7 +1045,7 @@ article section.hero-color h1.headline {
   }
 
   .image-cta-feature {
-    min-width: 543px;
+    min-width: 943px;
     flex-shrink: 0;
   }
 }
