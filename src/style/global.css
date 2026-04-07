@@ -992,6 +992,7 @@ article section.hero-color h1.headline {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: contain;
 }
 
 .image-cta-content {
@@ -1001,12 +1002,14 @@ article section.hero-color h1.headline {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
-  padding-bottom: 120px;
+  padding-top: 7rem;
+  padding-bottom: 8rem;
+  padding-left: 9rem;
+  padding-right: 9rem;
 }
 
 .image-cta-content .prehead {
-  color: var(--teal);
+  color: var(--light-grey);
 }
 
 .image-cta-content .headline {
@@ -1036,8 +1039,10 @@ article section.hero-color h1.headline {
   }
 
   .image-cta-content {
-    padding-bottom: 6rem;
-    padding-top: 3rem;
+    padding-top: 9rem;
+    padding-bottom: 8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .image-cta-bg-wrap {
@@ -1045,7 +1050,7 @@ article section.hero-color h1.headline {
   }
 
   .image-cta-feature {
-    min-width: 943px;
+    min-width: calc(1400px - (100vw / 2));
     flex-shrink: 0;
   }
 }
