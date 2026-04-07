@@ -1028,7 +1028,7 @@ article section.hero-color h1.headline {
   margin-bottom: 1.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 855px) {
   .image-cta {
     padding: 2rem 0;
   }
