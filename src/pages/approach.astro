@@ -15,6 +15,9 @@ const storySEO = {
   ogImage: story.content.og_image?.filename,
   metaRobots: story.content.noindex,
 };
+
+const SideBySide = story.content.body.find(blok => blok.component === 'sidebyside');
+const LeftRight = story.content.body.find(blok => blok.component === 'leftright');
 ---
 
 <BaseLayout
@@ -37,26 +40,7 @@ const storySEO = {
 	    </div>
     </section>
 
-	<section class="no-t-padding">
-		<div class="ipu">
-	        <div>
-	            <p class="prehead">HOW WE COLLABORATE</p>
-	            <h2>Support your team,<br />on your terms</h2>
-	            <p>Choose from two flexible frameworks that let you right-size engagements based on your unique needs and resources.</p>
-	        </div>
-
-	        <div class="card-teal li-arrow">
-				<h4>Consulting Services</h4>
-				<p>Drive resilient, long-term growth with an integrated extension of your team that helps discover opportunities, shape strategy, guide implementation, and monitor results.</p>
-			</div>
-
-			<div class="card-teal li-arrow">
-				<h4>Solutions</h4>
-				<p>When you need answers but not an agency, Solutions are per-project engagements that rapidly diagnose common pain points and deliver clear recommendations.</p>
-			</div>
-		</div>
-    </section>
-
+  {SideBySide && <StoryblokComponent blok={SideBySide} />}
 
 	<section class="inner-section align-center no-padding">
 		<div class="ipu">
@@ -72,7 +56,7 @@ const storySEO = {
 		        		<div class="step-content">
 			        		<img class="icon" src="img/icons/ic_listen.svg" alt="" width="64" height="64" />
 			        		<h4>Listen</h4>
-			        		<p>Our team of experts will work with you to assess your goals and leverage what makes your business unique.</p>
+			        		<p>We take the time to learn about your goals, objectives, pain points, and barriers to growth.</p>
 		        		</div>
 		        	</div>
 
@@ -87,21 +71,21 @@ const storySEO = {
 	        		<div class="step-content">
 		        		<img class="icon" src="img/icons/ic_tailor.svg" alt="" width="64" height="64" />
 		        		<h4>Tailor</h4>
-		        		<p>We’ll craft a precise strategy & data-based execution catered to your needs.</p>
+		        		<p>Our team of experts identifies custom insights and recommendations tailored to the nuances of your business, audience, and search landscape.</p>
 	        		</div>
 	        	</div>
 	        	<div class="step step-four">
 	        		<div class="step-content">
 		        		<img class="icon" src="img/icons/ic_implement.svg" alt="" width="64" height="64" />
 		        		<h4>Implement</h4>
-		        		<p>From consulting services to hands-on training, we’ll provide the right level of digital marketing assistance to help your business get tangible results.</p>
+		        		<p>We flexibly fine tune our partnership to provide the right support as you execute against the roadmap, including Product Management as needed.</p>
 	        		</div>
 	        	</div>
 	        	<div class="step step-five">
 	        		<div class="step-content">
 		        		<img class="illustration" src="img/icons/ic_iterate.svg" alt="" width="64" height="64" />
 		        		<h4>Iterate</h4>
-		        		<p>As your business grows and evolves, so should your strategy. We’ll be right by your side, monitoring progress and providing expert recommendations that move the needle every day.</p>
+		        		<p>We monitor performance and provide post-launch support, prioritizing a test-then-scale approach to mitigate risk and capture quick insights.</p>
 	        		</div>
 	        	</div>
 	        </div>
@@ -139,7 +123,7 @@ const storySEO = {
 	            <a href="/digital-market-intelligence" class="btnPrimary">Learn more</a>
 	        </div>
 	        <div>
-	        	<img src="https://assets.thegray.company/f/1016570/396x266/566e82e15a/graphic.png" alt="" width="250" height="168" />
+	        	<img src="https://assets.thegray.company/f/1016570/267x239/322cd3999c/inerz.png" alt="" width="250" height="168" />
 	        </div>
 	    </div>
     </section>
@@ -210,6 +194,8 @@ const storySEO = {
 	    	</div>
 		</div>
     </section>
+
+  {LeftRight && <StoryblokComponent blok={LeftRight} />}
 
     <section class="align-middle img-left">
     	<div class="ipu">
