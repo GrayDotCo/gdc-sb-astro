@@ -21,6 +21,7 @@ const storySEO = {
 
 const logoCarousel = story.content.body.find(blok => blok.component === 'carousel');
 const featuredBlogs = story.content.body.find(blok => blok.component === 'featured_blogs');
+const Cta = story.content.body.find(blok => blok.component === 'CTA');
 
 ---
 
@@ -294,7 +295,7 @@ const featuredBlogs = story.content.body.find(blok => blok.component === 'featur
   </section>
 
 
-  {logoCarousel && <StoryblokComponent blok={logoCarousel} />}
+  {Cta && <StoryblokComponent blok={Cta} />}
 
   <!--  <StoryblokComponent blok={story.content} /> -->
 
