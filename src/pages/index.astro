@@ -21,6 +21,8 @@ const storySEO = {
 
 const logoCarousel = story.content.body.find(blok => blok.component === 'carousel');
 const featuredBlogs = story.content.body.find(blok => blok.component === 'featured_blogs');
+const Cta = story.content.body.find(blok => blok.component === 'CTA');
+const LeftRight = story.content.body.find(blok => blok.component === 'leftright');
 
 ---
 
@@ -34,7 +36,7 @@ const featuredBlogs = story.content.body.find(blok => blok.component === 'featur
   <section class="hero">
     <div class="ipu">
       <div>
-        <h1>Connecting the Dots Between AI and Search</h1>
+        <h1>Connect the Dots Between AI & Search</h1>
         <p>Drive consistent growth in the face of constant flux, while intelligently optimizing for an increasingly AI future. </p>
         <a href="/contact" class="btnPrimary">Connect with an expert</a>
       </div>
@@ -44,23 +46,25 @@ const featuredBlogs = story.content.body.find(blok => blok.component === 'featur
     </div>
   </section>
 
-
-  <section class="align-center">
+  <section class="bg-grey align-center">
     <div class="ipu">
       <div>
         <h2>Who said SEO is dead?</h2>
-        <p>Search isn’t dying, it’s diversifying. <br/><br/>Users are turning to different sites in different situations for different answers. <br/><br/>Today, LLMs like Claude, forums like Reddit, and social apps like TikTok are “search engines” too. <br/><br/>In a time where SEO calls for connecting the dots, we bring clarity to a complex ecosystem — highlighting the path to resilient, fuutre-ready growth.</p>
+        <p>Search isn’t dying, it’s diversifying. <br/><br/>Users are turning to different sites in different situations for different answers. <br/><br/>LLMs like Claude, forums like Reddit, and social apps like TikTok are “search engines” too. <br/><br/>In a time where SEO calls for connecting the dots, we bring clarity to a complex ecosystem — highlighting the path to resilient, fuutre-ready growth.</p>
         <a href="/approach" class="btnPrimary">SEE OUR APPROACH</a>      
       </div>
     </div>
   </section>
 
 
+  {LeftRight && <StoryblokComponent blok={LeftRight} />}
+
+
   <section class="bg-grey inner-section">
     <div class="ipu">
       <div>
-        <p class="prehead">PER_PROJECT SOLUTIONS</p>
-        <h2>Answers, insights, & actionable strategy when you need it most</h2>
+        <p class="prehead">PROJECT-BASED SOLUTIONS</p>
+        <h2>Answers, insights, and actionable strategy when you need it most</h2>
         <p>Need answers but not an agency? Our solutions are fine-tuned to quickly address common pain points with rapid recommendations, clear timelines, and no awkward goodbyes.</p>
       </div>
 
@@ -73,6 +77,7 @@ const featuredBlogs = story.content.body.find(blok => blok.component === 'featur
               <li><a href="/services/opportunity-analysis">OPPORTUNITY ANALYSIS ></a></li>
               <li><a href="/services/paid-search">COMPETITIVE ANALYSIS ></a></li>
               <li><a href="/services/competitive-analysis">TRAFFIC LOSS INVESTIGATIONS ></a></li>
+              <li><a href="/digital-market-intelligence">DIGITAL MARKET INTELLIGENCE ></a></li>
             </ul>
           </div>
         </div>
@@ -86,6 +91,7 @@ const featuredBlogs = story.content.body.find(blok => blok.component === 'featur
               <li>CONTENT AUDITS</li>
               <li>TECH SEO AUDITS</li>
               <li><a href="/services/ai-audits">AI AUDITS ></a></li>
+              <li>JAVASCRIPT SEO AUDITS</li>
             </ul>
           </div>
         </div>
@@ -98,6 +104,7 @@ const featuredBlogs = story.content.body.find(blok => blok.component === 'featur
               <li>CONTENT STRATEGY</li>
               <li>SEO ROADMAP</li>
               <li><a href="/services/site-migrations">SITE MIGRATIONS ></a></li>
+              <li>INTERNATIONALIZATION</li>
             </ul>
           </div>
         </div>
@@ -138,13 +145,13 @@ const featuredBlogs = story.content.body.find(blok => blok.component === 'featur
 
         <div class="col-flex-row">
           <a class="card-img-text" href="/resources/sb-nation-enterprise-migration-case-study">
-            <img class="img-aspect" src={transformImageSrc("https://assets.thegray.company/f/1016570/900x600/e4c8cac48e/sbn-case-study-homepage-preview.png")} alt="SBNation and Gray Dot Co" width="450" height="293" />
+            <img class="img-aspect" src={transformImageSrc("https://assets.thegray.company/f/1016570/900x600/4eb0a4eb9e/sb-nation-case-study-homepage.png")} alt="SBNation and Gray Dot Co" width="900" height="600" />
             <h4>Case Study: Enterprise SEO Replatforming</h4>
             <p>Helping a major sports brand simultaneously migrate 180 domains and 5.4 million URLs — without hurting SEO performance.</p>
             <p class="btnTertiary">Read the Case Study ></p>
           </a>
           <a class="card-img-text" href="/resources/js-seo-chrome-extension">
-            <img class="img-aspect" src={transformImageSrc("https://assets.thegray.company/f/1016570/375x250/57af36b968/rde-icon-bg-grey.png")} alt="Rendering Difference Engine Logo" width="450" height="293" />
+            <img class="img-aspect" src={transformImageSrc("https://assets.thegray.company/f/1016570/750x500/fd51c6d93d/rde-homepage.png")} alt="Rendering Difference Engine Logo" width="750" height="500" />
             <h4>Chrome Extension: Rendering Difference Engine</h4>
             <p>Identify SEO signals added, removed, or altered during JavaScript rendering in a quick, one-click report.</p>
             <p class="btnTertiary">Add to Chrome ></p>
@@ -165,10 +172,13 @@ const featuredBlogs = story.content.body.find(blok => blok.component === 'featur
         <p class="prehead">FREE RESOURCES</p>
         <h2>As we learn and build, we share</h2>
         <p>Search is constantly evolving and knowledge-sharing is way cooler than gate-keeping. That much we’re sure of. Otherwise, we’re researching, building, and experimenting to help keep the community two steps ahead.</p>
-        <p><a href="/resources#tools">ADD OUR CHROME EXTENSIONS ></a></p>
-        <p><a href="/resources#templates">STEAL OUR SEO TEMPLATES  ></a></p>
-        <p><a href="/resources#research">DIG INTO ORIGINAL RESEARCH ></a></p>
-        <a href="/digital-market-intelligence" class="btnPrimary">Explore DMI</a>
+        <div class="li-bold">
+        <ul class="services-list">
+              <li><a href="/resources#tools">ADD OUR CHROME EXTENSIONS ></a></li>
+              <li><a href="/resources#templates">STEAL OUR SEO TEMPLATES  ></a></li>
+              <li><a href="/resources#research">DIG INTO ORIGINAL RESEARCH ></a></li>
+        </ul>
+        </div>
       </div>
       <div>
         <img src="https://assets.thegray.company/f/1016570/352x203/11aa90bb1b/jello.png" width="480" height="280" alt="" />
@@ -184,17 +194,16 @@ const featuredBlogs = story.content.body.find(blok => blok.component === 'featur
       <div>
         <p class="prehead">A little experiment</p>
         <h2>Nothing to see here</h2>
-        <p>
-          Human friends, please ignore this little experiment that’s going to help us learn more about bots, including the links below. (We’ll share some fun results soon!) <br />
-          <br />
-          <ul>
-            <li><a href="/links">Links</a></li>
-            <li><a href="/images">Images</a></li>
-            <li><a href="/code-page-copy">Code & page copy</a></li>
-            <li><a href="/tables-charts">Tables & charts</a></li>
-            <li><a href="/tables-charts-more">Tables, charts & more</a></li>
-          </ul>
-        </p>
+        <p>Human friends, please ignore this little experiment that’s going to help us learn more about bots, including the links below. (We’ll share some fun results soon!)</p>
+        <div class="li-bold">
+        <ul class="services-list">
+            <li><a href="/links">Links ></a></li>
+            <li><a href="/images">Images ></a></li>
+            <li><a href="/code-page-copy">Code & page copy ></a></li>
+            <li><a href="/tables-charts">Tables & charts ></a></li>
+            <li><a href="/tables-charts-more">Tables, charts & more ></a></li>
+        </ul>
+        </div>
       </div>
       <div>
         <img src="https://assets.thegray.company/f/1016570/551x367/2868850808/rendering-preview-image.png" width="480" height="280" alt="How to do an AI Crawling Audit" />
@@ -274,18 +283,7 @@ const featuredBlogs = story.content.body.find(blok => blok.component === 'featur
   </section>
 
 
-  <section class="align-middle img-left">
-    <div class="ipu">
-      <div>
-        <h2 class="title">Connect the dots with us.</h2>
-        <p>We'll help craft, teach, and carry out SEO roadmaps that check all the boxes.</p>
-        <a href="/contact" class="btnPrimary">TALK TO AN EXPERT</a>
-      </div>
-      <div>
-        <img src="/img/illustrations/il_gdc-3.png" width="480" height="280" alt="decorative shapes" />
-      </div>
-    </div>
-  </section>
+  {Cta && <StoryblokComponent blok={Cta} />}
 
   <!--  <StoryblokComponent blok={story.content} /> -->
 
