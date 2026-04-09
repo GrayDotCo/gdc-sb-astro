@@ -15,6 +15,9 @@ const storySEO = {
   ogImage: story.content.og_image?.filename,
   metaRobots: story.content.noindex,
 };
+
+const SideBySide = story.content.body.find(blok => blok.component === 'sidebyside');
+const LeftRight = story.content.body.find(blok => blok.component === 'leftright');
 ---
 
 <BaseLayout
@@ -37,26 +40,7 @@ const storySEO = {
 	    </div>
     </section>
 
-	<section class="no-t-padding">
-		<div class="ipu">
-	        <div>
-	            <p class="prehead">HOW WE COLLABORATE</p>
-	            <h2>Support your team,<br />on your terms</h2>
-	            <p>Choose from two flexible frameworks that let you right-size engagements based on your unique needs and resources.</p>
-	        </div>
-
-	        <div class="card-teal li-arrow">
-				<h4>Consulting Services</h4>
-				<p>Drive resilient, long-term growth with an integrated extension of your team that helps discover opportunities, shape strategy, guide implementation, and monitor results.</p>
-			</div>
-
-			<div class="card-teal li-arrow">
-				<h4>Solutions</h4>
-				<p>When you need answers but not an agency, Solutions are per-project engagements that rapidly diagnose common pain points and deliver clear recommendations.</p>
-			</div>
-		</div>
-    </section>
-
+  {SideBySide && <StoryblokComponent blok={SideBySide} />}
 
 	<section class="inner-section align-center no-padding">
 		<div class="ipu">
@@ -210,6 +194,8 @@ const storySEO = {
 	    	</div>
 		</div>
     </section>
+
+  {LeftRight && <StoryblokComponent blok={LeftRight} />}
 
     <section class="align-middle img-left">
     	<div class="ipu">
