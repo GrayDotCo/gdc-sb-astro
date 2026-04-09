@@ -61,10 +61,13 @@ const Cta = story.content.body.find(blok => blok.component === 'CTA');
         <p class="prehead">CONSULTING SERVICES</p>
         <h2>An integrated partner to guide the path forward</h2>
         <p>Get the care and agility of a consultant, coupled with the capabilities of an agency, from strategy to implementation.</p>
-        <p class="inner-highlight"><a href="/services/seo">SEO ></a></p><p> Grow with scalable, data-informed, & holistic strategy.</p>
-        <p class="inner-highlight"><a href="/services/seo-product-management">SEO PRODUCT MANAGEMENT ></a></p><p> Integrate SEO and Engineering to implement robust optimizations.</p>
-        <p class="inner-highlight"><a href="/services/content-marketing">CONTENT MARKETING ></a></p><p> Scale, reach your audience, & guide them down the funnel.</p>
-        <p class="inner-highlight"><a href="/services/paid-search">PAID SEARCH ></a></p><p> Cut costs and catapult conversions with tailored PPC. </p>
+        <div class="li-bold">
+        <ul class="services-list">
+          <li><a href="/services/seo">SEO ></a><p> Grow with scalable, data-informed, & holistic strategy.</p></li>
+          <li><a href="/services/seo-product-management">SEO PRODUCT MANAGEMENT ></a><p> Integrate SEO and Engineering to implement robust optimizations.</p></li>
+          <li><a href="/services/content-marketing">CONTENT MARKETING ></a><p> Scale, reach your audience, & guide them down the funnel.</p></li>
+          <li><a href="/services/paid-search">PAID SEARCH ></a><p> Cut costs and catapult conversions with tailored PPC. </p></li>
+        </ul>
       </div>
       <div class="add-margin-b">
         <img src={transformImageSrc("https://assets.thegray.company/f/1016570/500x500/45afe2d8b6/consulting.png")} alt="" />
@@ -206,15 +209,15 @@ const Cta = story.content.body.find(blok => blok.component === 'CTA');
       <div>
         <p class="prehead">A little experiment</p>
         <h2>Nothing to see here</h2>
-        <p>
-          Human friends, please ignore this little experiment that’s going to help us learn more about bots, including the links below. (We’ll share some fun results soon!) <br />
-          <br />
-            <p class="inner-highlight"><a href="/links">Links ></a></p>
-            <p class="inner-highlight"><a href="/images">Images ></a></li>
-            <p class="inner-highlight"><a href="/code-page-copy">Code & page copy ></a></p>
-            <p class="inner-highlight"><a href="/tables-charts">Tables & charts ></a></p>
-            <p class="inner-highlight"><a href="/tables-charts-more">Tables, charts & more ></a></p>
-        </p>
+        <p>Human friends, please ignore this little experiment that’s going to help us learn more about bots, including the links below. (We’ll share some fun results soon!)</p>
+        <div class="li-bold">
+        <ul class="services-list">
+            <li><a href="/links">Links ></a></li>
+            <li><a href="/images">Images ></a></li>
+            <li><a href="/code-page-copy">Code & page copy ></a></li>
+            <li><a href="/tables-charts">Tables & charts ></a></li>
+            <li><a href="/tables-charts-more">Tables, charts & more ></a></li>
+        </ul>
       </div>
       <div>
         <img src="https://assets.thegray.company/f/1016570/551x367/2868850808/rendering-preview-image.png" width="480" height="280" alt="How to do an AI Crawling Audit" />
