@@ -22,7 +22,6 @@ const storySEO = {
 const logoCarousel = story.content.body.find(blok => blok.component === 'carousel');
 const featuredBlogs = story.content.body.find(blok => blok.component === 'featured_blogs');
 const Cta = story.content.body.find(blok => blok.component === 'CTA');
-const LeftRight = story.content.body.find(blok => blok.component === 'leftright');
 
 ---
 
@@ -36,8 +35,8 @@ const LeftRight = story.content.body.find(blok => blok.component === 'leftright'
   <section class="hero">
     <div class="ipu">
       <div>
-        <h1>Connect the Dots Between AI & Search</h1>
-        <p>Drive consistent growth in the face of constant flux, while intelligently optimizing for an increasingly AI future. </p>
+        <h1>Connecting the Dots Between AI & Search</h1>
+        <p>Drive consistent growth in the face of constant flux, while intelligently optimizing for an increasingly AI future.</p>
         <a href="/contact" class="btnPrimary">Connect with an expert</a>
       </div>
       <div class="img-hero img-hero-home">
@@ -50,14 +49,34 @@ const LeftRight = story.content.body.find(blok => blok.component === 'leftright'
     <div class="ipu">
       <div>
         <h2>Who said SEO is dead?</h2>
-        <p>Search isn’t dying, it’s diversifying. <br/><br/>Users are turning to different sites in different situations for different answers. <br/><br/>LLMs like Claude, forums like Reddit, and social apps like TikTok are “search engines” too. <br/><br/>In a time where SEO calls for connecting the dots, we bring clarity to a complex ecosystem — highlighting the path to resilient, fuutre-ready growth.</p>
+        <p>Search isn’t dying, it’s diversifying. <br/><br/>Users are turning to different sites in different situations for different answers. <br/><br/>LLMs like Claude, forums like Reddit, and social apps like TikTok are “search engines” too. <br/><br/>In a time where SEO calls for connecting the dots, we bring clarity to a complex ecosystem — highlighting the path to resilient, future-ready growth.</p>
         <a href="/approach" class="btnPrimary">SEE OUR APPROACH</a>      
       </div>
     </div>
   </section>
 
 
-  {LeftRight && <StoryblokComponent blok={LeftRight} />}
+  <section class="align-left img-left">
+    <div class="ipu">
+      <div>
+        <p class="prehead">CONSULTING SERVICES</p>
+        <h2>An integrated partner to guide the path forward</h2>
+        <p>Get the care and agility of a consultant, coupled with the capabilities of an agency, from strategy to implementation.</p>
+        <div class="li-bold">
+          <ul class="services-list">
+            <li><a href="/services/seo">SEO ></a></li>
+            <li><a href="/services/seo-product-management">SEO PRODUCT MANAGEMENT ></a></li>
+            <li><a href="/services/content-marketing">CONTENT MARKETING ></a></li>
+            <li><a href="/services/paid-search">PAID SEARCH ></a></li>
+            <li><a href="/digital-market-intelligence">DIGITAL MARKET INTELLIGENCE ></a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <img src={transformImageSrc("https://assets.thegray.company/f/1016570/600x600/0eeb3215ce/consulting-services_600x600.png")} alt="" width="600" height="600"/>
+      </div>
+    </div>
+  </section>
 
 
   <section class="bg-grey inner-section">
@@ -77,13 +96,12 @@ const LeftRight = story.content.body.find(blok => blok.component === 'leftright'
               <li><a href="/services/opportunity-analysis">OPPORTUNITY ANALYSIS ></a></li>
               <li><a href="/services/paid-search">COMPETITIVE ANALYSIS ></a></li>
               <li><a href="/services/competitive-analysis">TRAFFIC LOSS INVESTIGATIONS ></a></li>
-              <li><a href="/digital-market-intelligence">DIGITAL MARKET INTELLIGENCE ></a></li>
             </ul>
           </div>
         </div>
 
         <div class="col-flex-row">
-          <img class="illustration" src="img/icons/ic_category-marketing_tech.svg" alt="" width="64"
+          <img class="illustration" src="http://assets.thegray.company/f/1016570/80x80/7c249e1017/ic_verify.svg" alt="" width="64"
             height="64" />
           <div>
             <h3>Audits</h3>
@@ -91,7 +109,7 @@ const LeftRight = story.content.body.find(blok => blok.component === 'leftright'
               <li>CONTENT AUDITS</li>
               <li>TECH SEO AUDITS</li>
               <li><a href="/services/ai-audits">AI AUDITS ></a></li>
-              <li>JAVASCRIPT SEO AUDITS</li>
+              <li>JAVASCRIPT AUDITS</li>
             </ul>
           </div>
         </div>
@@ -104,7 +122,6 @@ const LeftRight = story.content.body.find(blok => blok.component === 'leftright'
               <li>CONTENT STRATEGY</li>
               <li>SEO ROADMAP</li>
               <li><a href="/services/site-migrations">SITE MIGRATIONS ></a></li>
-              <li>INTERNATIONALIZATION</li>
             </ul>
           </div>
         </div>
@@ -121,8 +138,8 @@ const LeftRight = story.content.body.find(blok => blok.component === 'leftright'
         <p>Gray Dot Co is woman-owned, value-driven, and reimagining what it means to work with a digital marketing agency. Founded by a familiar face in the industry, we bring new ideas to the table as collaborators, not just consultants.</p>
         <a href="/team" class="btnPrimary">Get to know the Co</a>
       </div>
-      <div class="add-margin-b">
-        <img src={transformImageSrc("https://assets.thegray.company/f/1016570/500x375/53b5fa1d47/tory-017-1.png")} alt="Tory Gray headshot" />
+      <div class="add-margin-t">
+        <img src={transformImageSrc("https://assets.thegray.company/f/1016570/500x375/53b5fa1d47/tory-017-1.png")} alt="Tory Gray headshot" width="500" height="375"/>
       </div>
     </div>
   </section>
@@ -170,7 +187,7 @@ const LeftRight = story.content.body.find(blok => blok.component === 'leftright'
     <div class="ipu">
       <div>
         <p class="prehead">FREE RESOURCES</p>
-        <h2>As we learn and build, we share</h2>
+        <h2>By the Dot, for the people</h2>
         <p>Search is constantly evolving and knowledge-sharing is way cooler than gate-keeping. That much we’re sure of. Otherwise, we’re researching, building, and experimenting to help keep the community two steps ahead.</p>
         <div class="li-bold">
         <ul class="services-list">
