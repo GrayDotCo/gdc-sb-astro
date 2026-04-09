@@ -22,6 +22,7 @@ const storySEO = {
 const logoCarousel = story.content.body.find(blok => blok.component === 'carousel');
 const featuredBlogs = story.content.body.find(blok => blok.component === 'featured_blogs');
 const Cta = story.content.body.find(blok => blok.component === 'CTA');
+const leftright = story.content.body.find(blok => blok.component === 'LeftRight');
 
 ---
 
@@ -55,25 +56,9 @@ const Cta = story.content.body.find(blok => blok.component === 'CTA');
     </div>
   </section>
 
-  <section class="align-middle img-left">
-    <div class="ipu">
-      <div>
-        <p class="prehead">CONSULTING SERVICES</p>
-        <h2>An integrated partner to guide the path forward</h2>
-        <p>Get the care and agility of a consultant, coupled with the capabilities of an agency, from strategy to implementation.</p>
-        <div class="li-bold">
-        <ul class="services-list">
-          <li><a href="/services/seo">SEO ></a><p> Grow with scalable, data-informed, & holistic strategy.</p></li>
-          <li><a href="/services/seo-product-management">SEO PRODUCT MANAGEMENT ></a><p> Integrate SEO and Engineering to implement robust optimizations.</p></li>
-          <li><a href="/services/content-marketing">CONTENT MARKETING ></a><p> Scale, reach your audience, & guide them down the funnel.</p></li>
-          <li><a href="/services/paid-search">PAID SEARCH ></a><p> Cut costs and catapult conversions with tailored PPC. </p></li>
-        </ul>
-      </div>
-      <div class="add-margin-b">
-        <img src={transformImageSrc("https://assets.thegray.company/f/1016570/500x500/45afe2d8b6/consulting.png")} alt="" />
-      </div>
-    </div>
-  </section>
+
+  {LeftRight && <StoryblokComponent blok={LeftRight} />}
+
 
   <section class="bg-grey inner-section">
     <div class="ipu">
