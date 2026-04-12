@@ -15,6 +15,9 @@ const storySEO = {
   ogImage: story.content.og_image?.filename,
   metaRobots: story.content.noindex,
 };
+
+const SideBySide = story.content.body.find(blok => blok.component === 'sidebyside');
+const LeftRight = story.content.body.find(blok => blok.component === 'leftright');
 ---
 
 <BaseLayout
@@ -32,15 +35,17 @@ const storySEO = {
 	            <a href="/contact" class="btnPrimary">Connect with an expert</a>
 	        </div>
 	        <div>
-	        	<img src="img/illustrations/il_gdc-6.png" alt="decorative shapes" width="480" height="280" />
+	        	<img src="img/illustrations/il_gdc-6.png" alt="" width="480" height="280" />
 	        </div>
 	    </div>
     </section>
 
+  {SideBySide && <StoryblokComponent blok={SideBySide} />}
 
 	<section class="inner-section align-center no-padding">
 		<div class="ipu">
 	        <div>
+	            <p class="prehead">OUR CONSULTING PROCESS</p>
 	            <h2>Crafting custom strategies <br/>(because context is everything)</h2>
 	            <p>Our process pairs dynamic data and tech abilities with an agile, human approach to collaboration. We help businesses move the bottom line by tailoring strategy around the real differentiator... you.</p>
 	        </div>
@@ -49,79 +54,68 @@ const storySEO = {
 
 		        	<div class="step step-one">
 		        		<div class="step-content">
-			        		<img class="icon" src="img/icons/ic_listen.svg" alt="decorative" width="64" height="64" />
+			        		<img class="icon" src="img/icons/ic_listen.svg" alt="" width="64" height="64" />
 			        		<h4>Listen</h4>
-			        		<p>Our team of experts will work with you to assess your goals and leverage what makes your business unique.</p>
+			        		<p>We take the time to learn about your goals, objectives, pain points, and barriers to growth.</p>
 		        		</div>
 		        	</div>
 
 	        	<div class="step step-two">
 	        		<div class="step-content">
-		        		<img class="icon" src="img/icons/ic_discover.svg" alt="decorative" width="64" height="64" />
+		        		<img class="icon" src="img/icons/ic_discover.svg" alt="" width="64" height="64" />
 		        		<h4>Discover</h4>
 		        		<p>Digital Market Intelligence assesses your market, answers your most pressing questions, and pinpoints untapped opportunities specific to your brand.</p>
 	        		</div>
 	        	</div>
 	        	<div class="step step-three">
 	        		<div class="step-content">
-		        		<img class="icon" src="img/icons/ic_tailor.svg" alt="decorative" width="64" height="64" />
+		        		<img class="icon" src="img/icons/ic_tailor.svg" alt="" width="64" height="64" />
 		        		<h4>Tailor</h4>
-		        		<p>We’ll craft a precise strategy & data-based execution catered to your needs.</p>
+		        		<p>Our team of experts identifies custom insights and recommendations tailored to the nuances of your business, audience, and search landscape.</p>
 	        		</div>
 	        	</div>
 	        	<div class="step step-four">
 	        		<div class="step-content">
-		        		<img class="icon" src="img/icons/ic_implement.svg" alt="decorative" width="64" height="64" />
+		        		<img class="icon" src="img/icons/ic_implement.svg" alt="" width="64" height="64" />
 		        		<h4>Implement</h4>
-		        		<p>From consulting services to hands-on training, we’ll provide the right level of digital marketing assistance to help your business get tangible results.</p>
+		        		<p>We flexibly fine tune our partnership to provide the right support as you execute against the roadmap, including Product Management as needed.</p>
 	        		</div>
 	        	</div>
 	        	<div class="step step-five">
 	        		<div class="step-content">
-		        		<img class="illustration" src="img/icons/ic_iterate.svg" alt="decorative" width="64" height="64" />
+		        		<img class="illustration" src="img/icons/ic_iterate.svg" alt="" width="64" height="64" />
 		        		<h4>Iterate</h4>
-		        		<p>As your business grows and evolves, so should your strategy. We’ll be right by your side, monitoring progress and providing expert recommendations that move the needle every day.</p>
+		        		<p>We monitor performance and provide post-launch support, prioritizing a test-then-scale approach to mitigate risk and capture quick insights.</p>
 	        		</div>
 	        	</div>
 	        </div>
 	    </div>
     </section>
 
-
-	<section class="no-t-padding">
-		<div class="ipu">
+ <section class="bg-grey align-middle">
+    	<div class="ipu">
 	        <div>
-	            <h2>Deep knowledge,<br />diverse applications</h2>
-	            <p>Brands deserve an agency that moves the needle by understanding the nuances. Our deep knowledge and diverse experience power insights that aren’t simply adapted for your industry, they’re optimized for it.</p>
+	            <h2>Actionable insights adapted for your industry</h2>
+	            <p>We move the needle by understanding the nuances. Our deep knowledge and diverse capabilities power insights that aren’t simply adapted for your industry, they’re optimized for it.</p>
+	            <p class="prehead">INDUSTRY VERTICALS</p>
+	            <ul>
+	               <li>SaaS</li>
+	               <li>eCommerce & DTC</li>
+	               <li>Funded tech startups</li>
+	               <li>Regulated industries</li>
+	               <li>Nonprofit organizations</li>
+	               <li>GovTech</li>
+	               <li>Marketplaces</li>
+                </ul>
+	            <!--<a href="/digital-market-intelligence" class="btnPrimary">Learn more</a>-->
 	        </div>
-
-	        <div class="card-teal li-arrow">
-				<h4>Industries & verticals</h4>
-				<ul class="services-list">
-					<li>SaaS</li>
-					<li>eCommerce & DTC</li>
-					<li>Funded tech</li>
-					<li>Regulated industries</li>
-					<li>Nonprofit organizations</li>
-					<li>FinTech</li>
-				</ul>
-			</div>
-
-			<div class="card-teal li-arrow">
-				<h4>Core services</h4>
-				<ul class="services-list">
-					<li><a href="/services/seo">Technical SEO</a></li>
-					<li><a href="/services/seo-traffic-investigation">SEO Audits & Investigations</a></li>
-					<li><a href="/digital-market-intelligence">Digital Marketing Intelligence</a></li>
-					<li><a href="/services/seo-product-management">Product Management</a></li>
-					<li><a href="/services/content-marketing">Content Marketing</a></li>
-				</ul>
-			</div>
-		</div>
+	        <div class="add-margin-t">
+	        	<img src="https://assets.thegray.company/f/1016570/540x360/d9d6bb97f0/integrate-small.jpeg" alt="" width="540" height="360" />
+	        </div>
+	    </div>
     </section>
 
-
-    <section class="bg-grey align-middle img-left">
+    <section class="align-middle img-left">
     	<div class="ipu">
 	        <div>
 	            <h2>But first, data...</h2>
@@ -129,7 +123,7 @@ const storySEO = {
 	            <a href="/digital-market-intelligence" class="btnPrimary">Learn more</a>
 	        </div>
 	        <div>
-	        	<img src="img/illustrations/il_gdc-5.png" alt="decorative shapes" width="480" height="280" />
+	        	<img src="https://assets.thegray.company/f/1016570/267x239/322cd3999c/inerz.png" alt="" width="250" height="168" />
 	        </div>
 	    </div>
     </section>
@@ -138,7 +132,7 @@ const storySEO = {
 	<section>
 		<div class="ipu">
 	        <div>
-	        	<img class="illustration" src="img/icons/ic_category-marketing_strategy.svg" alt="decorative" width="64" height="64" />
+	        	<img class="illustration" src="img/icons/ic_category-marketing_strategy.svg" alt="" width="64" height="64" />
 	            <h2>Bringing tech to the marketing party</h2>
 	        </div>
 
@@ -170,7 +164,7 @@ const storySEO = {
 	        <div class="inner-div">
 		        <div class="col-flex-row">
 		        	<div>
-		        		<img class="illustration" src="img/icons/ic_category-digital-marketing-research.svg" alt="decorative" width="64" height="64" />
+		        		<img class="illustration" src="img/icons/ic_category-digital-marketing-research.svg" alt="" width="64" height="64" />
 			            <h4>
 			            	Integrate
 			        	</h4>
@@ -179,7 +173,7 @@ const storySEO = {
 			           	</p>
 		        	</div>
 		        	<div>
-		        		<img class="illustration" src="img/icons/ic_private-education.svg" alt="decorative" width="64" height="64" />
+		        		<img class="illustration" src="img/icons/ic_private-education.svg" alt="" width="64" height="64" />
 			            <h4>
 			            	Educate
 			        	</h4>
@@ -188,7 +182,7 @@ const storySEO = {
 			           	</p>
 		        	</div>
 		        	<div>
-		        		<img class="illustration" src="img/icons/ic_boost.svg" alt="decorative" width="64" height="64" />
+		        		<img class="illustration" src="img/icons/ic_boost.svg" alt="" width="64" height="64" />
 			            <h4>
 			            	Empower
 			        	</h4>
@@ -201,6 +195,8 @@ const storySEO = {
 		</div>
     </section>
 
+  {LeftRight && <StoryblokComponent blok={LeftRight} />}
+
     <section class="align-middle img-left">
     	<div class="ipu">
 	        <div>
@@ -208,7 +204,7 @@ const storySEO = {
 	            <a href="/contact" class="btnPrimary">Connect with an expert</a>
 	        </div>
 	        <div>
-	        	<img src="img/illustrations/il_gdc-4.png" alt="decorative shapes" width="480" height="280" />
+	        	<img src="img/illustrations/il_gdc-4.png" alt="" width="480" height="280" />
 	        </div>
 	    </div>
     </section>

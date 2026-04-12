@@ -21,6 +21,7 @@ const storySEO = {
 
 const logoCarousel = story.content.body.find(blok => blok.component === 'carousel');
 const featuredBlogs = story.content.body.find(blok => blok.component === 'featured_blogs');
+const Cta = story.content.body.find(blok => blok.component === 'CTA');
 
 ---
 
@@ -34,78 +35,22 @@ const featuredBlogs = story.content.body.find(blok => blok.component === 'featur
   <section class="hero">
     <div class="ipu">
       <div>
-        <h1>Tomorrow's marketing, today.</h1>
-        <p>We're a modern data and search marketing agency keeping brands two steps ahead in a landscape where flux is the only constant.</p>
+        <h1>Connecting the Dots Between AI & Search</h1>
+        <p>Drive consistent growth in the face of constant flux, while intelligently optimizing for an increasingly AI future.</p>
         <a href="/contact" class="btnPrimary">Connect with an expert</a>
       </div>
       <div class="img-hero img-hero-home">
-        <img src="img/illustrations/img_home-hero.png" width="712" height="512" alt="decorative shapes" />
+        <img src="img/illustrations/img_home-hero.png" width="712" height="512" alt="" />
       </div>
     </div>
   </section>
 
-
-  <section class="align-center">
+  <section class="bg-grey align-center">
     <div class="ipu">
       <div>
-        <h2>The difference is in the data.</h2>
-        <p>Cut-and-paste formulas are falling short, pay-to-play is getting pricey, and search has SEOs scratching their heads. Is digital marketing dead? Far from it.</p>
-        <p><strong>Our intelligence-first approach taps into game-changing insights about your audience, brand, and market — making them the heart of meaningful strategies that break through the "meh."</strong></p>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="bg-grey inner-section">
-    <div class="ipu">
-      <div>
-        <p class="prehead">WHAT WE DO</p>
-        <h2>Building solutions. <br />Breaking silos.</h2>
-        <p>
-          Data, market intelligence, and search marketing don't live in a vacuum. <br />
-          We connect the dots between disciplines to solve problems, find answers, and spark growth.
-        </p>
-      </div>
-
-      <div class="flex-wrap wrap-three services li-bold">
-        <div class="col-flex-row">
-          <img class="illustration" src="img/icons/ic_category-marketing_strategy.svg" alt="decorative" width="64" height="64" />
-          <div>
-            <h3>Strategy</h3>
-            <ul class="services-list">
-              <li><a href="/services/seo">SEO CONSULTING ></a></li>
-              <li><a href="/services/paid-search">PPC CONSULTING ></a></li>
-              <li><a href="/services/content-marketing">CONTENT MARKETING ></a></li>
-              <li>COMPETITIVE RESEARCH</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-flex-row">
-          <img class="illustration" src="img/icons/ic_category-marketing_tech.svg" alt="decorative" width="64"
-            height="64" />
-          <div>
-            <h3>Tech</h3>
-            <ul class="services-list">
-              <li>TECHNICAL SEO</li>
-              <li>JAVASCRIPT SEO</li>
-              <li>WEB MIGRATIONS</li>
-              <li>INTERNATIONALIZATION</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-flex-row">
-          <img class="illustration" src="img/icons/ic_category-marketing_data.svg" alt="decorative" width="64" height="64" />
-          <div>
-            <h3>Data</h3>
-            <ul class="services-list">
-              <li><a href="/digital-market-intelligence">MARKET INTELLIGENCE ></a></li>
-              <li><a href="/services/seo-traffic-investigation">TRAFFIC DROP INVESTIGATIONS ></a></li>
-              <li>COMPLIANCE & PRIVACY</li>
-            </ul>
-          </div>
-        </div>
+        <h2>Who said SEO is dead?</h2>
+        <p>Search isn’t dying, it’s diversifying. <br/><br/>Users are turning to different sites in different situations for different answers. <br/><br/>LLMs like Claude, forums like Reddit, and social apps like TikTok are “search engines” too. <br/><br/>In a time where SEO calls for connecting the dots, we bring clarity to a complex ecosystem — highlighting the path to resilient, future-ready growth.</p>
+        <a href="/approach" class="btnPrimary">SEE OUR APPROACH</a>      
       </div>
     </div>
   </section>
@@ -114,67 +59,165 @@ const featuredBlogs = story.content.body.find(blok => blok.component === 'featur
   <section class="align-middle img-left">
     <div class="ipu">
       <div>
-        <p class="prehead">Our team</p>
-        <h2>Powered by fresh <br />perspective.</h2>
-        <p>Gray Dot Co is woman-owned, value-driven, and reimagining what it means to work with a digital marketing agency. Founded by a familiar face in the industry, we bring new ideas to the table as collaborators, not just consultants.</p>
-        <a href="/team" class="btnPrimary">Get to know the Co</a>
+        <p class="prehead">CONSULTING SERVICES</p>
+        <h2>An integrated partner to guide the path forward</h2>
+        <p>Get the care and agility of a consultant, coupled with the capabilities of an agency, from strategy to implementation.</p>
+        <div class="li-bold">
+          <ul class="services-list">
+            <li><a href="/services/seo">SEO ></a></li>
+            <li><a href="/services/seo-product-management">SEO PRODUCT MANAGEMENT ></a></li>
+            <li><a href="/services/content-marketing">CONTENT MARKETING ></a></li>
+            <li><a href="/services/paid-search">PAID SEARCH ></a></li>
+            <li><a href="/digital-market-intelligence">DIGITAL MARKET INTELLIGENCE ></a></li>
+          </ul>
+        </div>
       </div>
-      <div class="add-margin-b">
-        <img src={transformImageSrc("https://assets.thegray.company/f/1016570/1600x2000/032b910b08/tory-014.jpg")} alt="Tory Gray" />
+      <div>
+        <img src={transformImageSrc("https://assets.thegray.company/f/1016570/600x600/0eeb3215ce/consulting-services_600x600.png?cv=1775772119748")} alt="" width="600" height="450"/>
       </div>
     </div>
   </section>
 
 
-  {logoCarousel && <StoryblokComponent blok={logoCarousel} />}
-
-
-  <section>
+  <section class="bg-grey inner-section">
     <div class="ipu">
       <div>
-        <img src="img/illustrations/il_gdc-8.png" width="480" height="280" alt="decorative shapes" />
+        <p class="prehead">PROJECT-BASED SOLUTIONS</p>
+        <h2>Answers, insights, and actionable strategy when you need it most</h2>
+        <p>Need answers but not an agency? Our solutions are fine-tuned to quickly address common pain points with rapid recommendations, clear timelines, and no awkward goodbyes.</p>
       </div>
 
-      <div class="size-two">
-        <div class="add-margin-b">
-          <p class="prehead">Our work</p>
-          <h2>If you've got it, flaunt it.</h2>
+      <div class="flex-wrap wrap-three services li-bold">
+        <div class="col-flex-row">
+          <img class="illustration" src="https://assets.thegray.company/f/1016570/80x80/88c54c320a/ic_ideation.svg" alt="" width="64" height="64" />
+          <div>
+            <h3>Analysis</h3>
+            <ul class="services-list">
+              <li><a href="/services/opportunity-analysis">OPPORTUNITY ANALYSIS ></a></li>
+              <li><a href="/services/paid-search">COMPETITIVE ANALYSIS ></a></li>
+              <li><a href="/services/competitive-analysis">TRAFFIC LOSS INVESTIGATIONS ></a></li>
+            </ul>
+          </div>
         </div>
 
         <div class="col-flex-row">
-          <a class="card-img-text" href="/resources/sb-nation-enterprise-migration-case-study">
-            <img class="img-aspect" src={transformImageSrc("https://assets.thegray.company/f/1016570/900x600/e4c8cac48e/sbn-case-study-homepage-preview.png")} alt="SBNation and Gray Dot Co" width="450" height="293" />
-            <h4>Case Study: Enterprise SEO Replatforming</h4>
-            <p>Helping a major sports brand simultaneously migrate 180 domains and 5.4 million URLs — without hurting SEO performance.</p>
-            <p class="btnTertiary">Read the Case Study ></p>
-          </a>
-          <a class="card-img-text" href="/resources/js-seo-chrome-extension">
-            <img class="img-aspect" src={transformImageSrc("https://assets.thegray.company/f/1016570/900x586/4cc1d44318/rde-framed.png")} alt="Rendering Difference Engine Logo" width="450" height="293" />
-            <h4>Chrome Extension: Rendering Difference Engine</h4>
-            <p>Identify SEO signals added, removed, or altered during JavaScript rendering in a quick, one-click report.</p>
-            <p class="btnTertiary">Add to Chrome ></p>
-          </a>
+          <img class="illustration" src="http://assets.thegray.company/f/1016570/80x80/7c249e1017/ic_verify.svg" alt="" width="64"
+            height="64" />
+          <div>
+            <h3>Audits</h3>
+            <ul class="services-list">
+              <li>CONTENT AUDITS</li>
+              <li>TECH SEO AUDITS</li>
+              <li><a href="/services/ai-audits">AI AUDITS ></a></li>
+              <li>JAVASCRIPT AUDITS</li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <a href="/results" class="btnPrimary">See our work</a>
+
+        <div class="col-flex-row">
+          <img class="illustration" src="img/icons/ic_category-marketing_strategy.svg" alt="" width="64" height="64" />
+          <div>
+            <h3>Strategy</h3>
+            <ul class="services-list">
+              <li>CONTENT STRATEGY</li>
+              <li>SEO ROADMAP</li>
+              <li><a href="/services/site-migrations">SITE MIGRATIONS ></a></li>
+            </ul>
+          </div>
         </div>
       </div>
+    </div>
+  </section>
 
+
+  <section class="align-middle">
+    <div class="ipu">
+      <div>
+        <p class="prehead">Our team</p>
+        <h2>Powered by fresh <br />perspective</h2>
+        <p>Gray Dot Co is woman-owned, value-driven, and reimagining what it means to work with a digital marketing agency. Founded by a familiar face in the industry, we bring new ideas to the table as collaborators, not just consultants.</p>
+        <a href="/team" class="btnPrimary">Get to know the Co</a>
+      </div>
+      <div class="add-margin-t">
+        <img src={transformImageSrc("https://assets.thegray.company/f/1016570/500x375/53b5fa1d47/tory-017-1.png")} alt="Tory Gray headshot" width="500" height="375"/>
+      </div>
     </div>
   </section>
 
 
   <section class="bg-grey">
     <div class="ipu">
+      <div class="align-center">
+        <p class="prehead">OUR CLIENTS</p>
+        <h2 class="blok-title">Lasting partnerships over logos</h2>
+        <div class="flex-wrap margin-l logos">
+          <img src="https://assets.thegray.company/f/1016570/500x255/8b7fb6c961/vox-grid.svg" alt="Vox" title="" width="500" height="255" />
+          <img src="https://assets.thegray.company/f/1016570/500x255/8bcf8eb311/thp-grid.svg" alt="The Hunger Project" title="" width="500" height="255" />
+          <img src="https://assets.thegray.company/f/1016570/500x255/e205b799c6/verge-grid.svg" alt="The Verge" title="" width="500" height="255" />
+          <img src="https://assets.thegray.company/f/1016570/500x255/e5b7f01919/flex-index-grid.svg" alt="Flex Index" title="" width="500" height="255" />
+          <img src="https://assets.thegray.company/f/1016570/500x255/d5b704d64b/vsco-grid.svg" alt="VSCO" title="" width="500" height="255" />
+          <img src="https://assets.thegray.company/f/1016570/500x255/f12e26e4cb/osmos-grid.svg" alt="Osmos" title="" width="500" height="255" />
+          <img src="https://assets.thegray.company/f/1016570/500x255/d14f240a61/encore-grid.svg" alt="Encore" title="" width="500" height="255" />
+          <img src="https://assets.thegray.company/f/1016570/500x255/77673d6d4f/guittard-grid.svg" alt="Guittard" title="" width="500" height="255" />
+          <img src="https://assets.thegray.company/f/1016570/500x255/d278df2b08/au-grid.svg" alt="Artifact Uprising" title="" width="500" height="255" />
+          <img src="https://assets.thegray.company/f/1016570/500x255/fe504693b1/soar-grid.svg" alt="Soar Autism Center" title="" width="500" height="255" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="ipu">
       <div>
-        <p class="prehead">DIGITAL MARKET INTELLIGENCE</p>
-        <h2>Actionable, accessible consumer insights</h2>
-        <p>Answer critical business questions with faster, more accurate, and more comprehensive views of consumer opinions.</p>
-        <p>Digital Market Intelligence (DMI) delivers quantifiable insights to power product, marketing, and operations strategies — in a fraction of the time.</p>
-        <a href="/digital-market-intelligence" class="btnPrimary">Explore DMI</a>
+        <img src="img/illustrations/il_gdc-8.png" width="480" height="280" alt="" />
+      </div>
+
+      <div class="size-two">
+        <div class="add-margin-b">
+          <p class="prehead">Our work</p>
+          <h2>If you've got it, flaunt it</h2>
+        </div>
+
+        <div class="col-flex-row">
+          <a class="card-img-text" href="/resources/sb-nation-enterprise-migration-case-study">
+            <img class="img-aspect" src={transformImageSrc("https://assets.thegray.company/f/1016570/900x600/4eb0a4eb9e/sb-nation-case-study-homepage.png")} alt="SBNation and Gray Dot Co" width="900" height="600" />
+            <h4>Case Study: Enterprise SEO Replatforming</h4>
+            <p>Helping a major sports brand simultaneously migrate 180 domains and 5.4 million URLs — without hurting SEO performance.</p>
+            <p class="btnTertiary">Read the Case Study ></p>
+          </a>
+          <a class="card-img-text" href="/resources/js-seo-chrome-extension">
+            <img class="img-aspect" src={transformImageSrc("https://assets.thegray.company/f/1016570/750x500/fd51c6d93d/rde-homepage.png")} alt="Rendering Difference Engine Logo" width="750" height="500" />
+            <h4>Chrome Extension: Rendering Difference Engine</h4>
+            <p>Identify SEO signals added, removed, or altered during JavaScript rendering in a quick, one-click report.</p>
+            <p class="btnTertiary">Add to Chrome ></p>
+          </a>
+        </div>
+        <div>
+          <a href="/results" class="btnPrimary">See our results</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="bg-grey img-left">
+    <div class="ipu">
+      <div>
+        <p class="prehead">FREE RESOURCES</p>
+        <h2>By the Dot, for the people</h2>
+        <p>Search is constantly evolving and knowledge-sharing is way cooler than gate-keeping. That much we’re sure of. Otherwise, we’re researching, building, and experimenting to help keep the community two steps ahead.</p>
+        <div class="li-bold">
+        <ul class="services-list">
+              <li><a href="/resources#tools">ADD OUR CHROME EXTENSIONS ></a></li>
+              <li><a href="/resources#templates">STEAL OUR SEO TEMPLATES  ></a></li>
+              <li><a href="/resources#research">DIG INTO ORIGINAL RESEARCH ></a></li>
+        </ul>
+        </div>
       </div>
       <div>
-        <img src="img/illustrations/il_gdc-6.png" width="480" height="280" alt="decorative shapes" />
+        <img src="https://assets.thegray.company/f/1016570/352x203/11aa90bb1b/jello.png" width="480" height="280" alt="" />
       </div>
     </div>
   </section>
@@ -185,22 +228,21 @@ const featuredBlogs = story.content.body.find(blok => blok.component === 'featur
   <section class="bg-grey align-middle">
     <div class="ipu">
       <div>
-        <p class="prehead">Experiments</p>
-        <h2>AI Bot Rendering</h2>
-        <p>
-          In addition to sharing insights on how AI bots crawl websites, we like to run some experiments of our own. Like these ones: <br />
-          <br />
-          <ul>
-            <li><a href="/links">Links</a></li>
-            <li><a href="/images">Images</a></li>
-            <li><a href="/code-page-copy">Code & page copy</a></li>
-            <li><a href="/tables-charts">Tables & charts</a></li>
-          </ul>
-        </p>
-        <a href="/blog/llm-ai-crawl-audit" class="btnPrimary">AI Bot Crawling 101</a>
+        <p class="prehead">A little experiment</p>
+        <h2>Nothing to see here</h2>
+        <p>Human friends, please ignore this little experiment that’s going to help us learn more about bots, including the links below. (We’ll share some fun results soon!)</p>
+        <div class="li-bold">
+        <ul class="services-list">
+            <li><a href="/links">Links ></a></li>
+            <li><a href="/images">Images ></a></li>
+            <li><a href="/code-page-copy">Code & page copy ></a></li>
+            <li><a href="/tables-charts">Tables & charts ></a></li>
+            <li><a href="/tables-charts-more">Tables, charts & more ></a></li>
+        </ul>
+        </div>
       </div>
       <div>
-        <img src="https://assets.thegray.company/f/1016570/900x600/a4f1b09d2a/blog_ai-crawling_00_preview.png" width="480" height="280" alt="How to do an AI Crawling Audit" />
+        <img src="https://assets.thegray.company/f/1016570/551x367/2868850808/rendering-preview-image.png" width="480" height="280" alt="How to do an AI Crawling Audit" />
       </div>
     </div>
   </section>
@@ -210,21 +252,21 @@ const featuredBlogs = story.content.body.find(blok => blok.component === 'featur
     <div class="ipu">
         <div class="col-flex-row y-scroll align-center">
         <div class="card-testimonial">
-          <img src={transformImageSrc("https://a-us.storyblok.com/f/1016570/797x797/697970eabb/thomas-stang-vox-media.jpeg")} alt="Thomas Stang, Principal Software Engineer, Vox Media" width="120" height="120" />
+          <img src={transformImageSrc("https://assets.thegray.company/f/1016570/797x797/697970eabb/thomas-stang-vox-media.jpeg")} alt="Thomas Stang, Principal Software Engineer, Vox Media" width="120" height="120" />
           <p class="quote">
             Migrations at the scale of Eater and SB Nation aren’t just technical projects, they’re moments where years of earned search equity are on the line. Gray Dot brought deep JavaScript SEO expertise, strong planning discipline, and a steady, responsive partnership throughout some of the most complex launches we’ve done. Their ability to anticipate risk, monitor performance in real time, and act quickly when conditions changed was critical to maintaining stability and setting these platforms up for long-term success.
           </p>
           <p>Thomas Stang · Principal Software Engineer, Vox Media</p>
         </div>      
         <div class="card-testimonial">
-          <img src={transformImageSrc("https://a-us.storyblok.com/f/1016570/120x120/9b1e90b1f2/naresh-venkat.jpeg")} alt="Naresh Venkat, Co-Founder, Osmos" width="120" height="120" />
+          <img src={transformImageSrc("https://assets.thegray.company/f/1016570/120x120/9b1e90b1f2/naresh-venkat.jpeg")} alt="Naresh Venkat, Co-Founder, Osmos" width="120" height="120" />
           <p class="quote">
             Gray Dot Co really knocked it out of the park for us at Osmos. Their approach to SEO and content marketing helped us cut through the noise. They didn't just deliver a cookie-cutter solution - they dug deep, crafted a roadmap that fit us like a glove, and created content that really spoke to our unique selling points. But what really sets them apart is how they've become true partners in our journey. They're not just another vendor - they're an extension of our team, fully invested in our success in this competitive space.
           </p>
           <p>Naresh Venkat · Co-Founder, Osmos</p>
         </div>
         <div class="card-testimonial">
-          <img src={transformImageSrc("https://a-us.storyblok.com/f/1016570/120x120/59cec8c56a/melanie-almeida.jpeg")} alt="Mélanie Almeida, Growth Manager, Strapi" width="120" height="120" />
+          <img src={transformImageSrc("https://assets.thegray.company/f/1016570/120x120/59cec8c56a/melanie-almeida.jpeg")} alt="Mélanie Almeida, Growth Manager, Strapi" width="120" height="120" />
           <p class="quote">
             I had the pleasure of hiring the Gray Dot Company twice. Both times, they demonstrated their strong knowledge of technical SEO and amazed my team and me. They don't sugarcoat results. They takes the time to explain, build reports and write best practices for us.<br />
             The communication between my team and Sam was smooth since they both spoke the same language. I recommend hiring the Gray Dot Company for your next technical SEO projects.
@@ -232,21 +274,21 @@ const featuredBlogs = story.content.body.find(blok => blok.component === 'featur
           <p>Mélanie Almeida · Growth Manager, Strapi</p>
         </div>
         <div class="card-testimonial">
-          <img src={transformImageSrc("https://a-us.storyblok.com/f/1016570/120x120/cab2031148/alex-johnson.jpeg")} alt="Alex Johnson, Director of Consumer Experience, Cherry Creek Mortgage" width="120" height="120" />
+          <img src={transformImageSrc("https://assets.thegray.company/f/1016570/120x120/cab2031148/alex-johnson.jpeg")} alt="Alex Johnson, Director of Consumer Experience, Cherry Creek Mortgage" width="120" height="120" />
           <p class="quote">
             Gray Dot Company provides ongoing SEO strategy and execution regarding content and technical, on-page development. They are now spearheading a nationally focused keyword campaign. Website visibility has increased markedly since the new site launched thanks to The Gray Dot Company's regular communication and holistic approach. Rather than solely focusing on immediate tasks, they also drive long-term planning and growth efforts. Customers can expect wide-ranging benefits.
           </p>
           <p>Alex Johnson · Director of Consumer Experience, Cherry Creek Mortgage</p>
         </div>
         <div class="card-testimonial">
-          <img src={transformImageSrc("https://a-us.storyblok.com/f/1016570/120x120/365fc08580/kristen-edgerton.jpeg")} alt="Kristen Edgerton, Head of Merchandising, Artifact Uprising" width="120" height="120" />
+          <img src={transformImageSrc("https://assets.thegray.company/f/1016570/120x120/365fc08580/kristen-edgerton.jpeg")} alt="Kristen Edgerton, Head of Merchandising, Artifact Uprising" width="120" height="120" />
           <p class="quote">
             We hired the Gray Dot Company to conduct an audit of our site and help us identify key optimization opportunities following a larger site migration initiative. Aside from the expertise they brought to the table, I was really wowed by the way in which they took that expertise and mapped it to the unique nuances of our site and business. Gray Dot took the time to understand the inherent opportunities and limitations that were distinct to our business, crafting their recommendations and approach accordingly.
           </p>
           <p>Kristen Edgerton · Head of Merchandising, Artifact Uprising</p>
         </div>
         <div class="card-testimonial">
-          <img src={transformImageSrc("https://a-us.storyblok.com/f/1016570/200x200/cae25c74b2/julia-taylor-brown.jpg")} alt="Julia Taylor-Brown, Head of Content, Culinary & Engagement" width="120" height="120" />
+          <img src={transformImageSrc("https://assets.thegray.company/f/1016570/200x200/cae25c74b2/julia-taylor-brown.jpg")} alt="Julia Taylor-Brown, Head of Content, Culinary & Engagement" width="120" height="120" />
           <p class="quote">
             Tory and the GDC team are some of the smartest, most professional and thoughtful people I have ever worked with. They have the unique ability to marry incredible research skills and data analysis with a deep contextual understanding of what a company needs from SEO at the particular stage of their lifecycle. TGDC uncovered an exciting greenfield for us to shine in an undeveloped niche, giving us a clear and focused path to follow. TGDC is at the top of my referral list for any company building out or focusing their content program. I cannot recommend them highly enough!
           </p>
@@ -277,18 +319,7 @@ const featuredBlogs = story.content.body.find(blok => blok.component === 'featur
   </section>
 
 
-  <section class="align-middle img-left">
-    <div class="ipu">
-      <div>
-        <h2 class="title">Connect the dots with us.</h2>
-        <p>We'll help craft, teach, and carry out SEO roadmaps that check all the boxes.</p>
-        <a href="/contact" class="btnPrimary">TALK TO AN EXPERT</a>
-      </div>
-      <div>
-        <img src="/img/illustrations/il_gdc-3.png" width="480" height="280" alt="decorative shapes" />
-      </div>
-    </div>
-  </section>
+  {Cta && <StoryblokComponent blok={Cta} />}
 
   <!--  <StoryblokComponent blok={story.content} /> -->
 

@@ -39,8 +39,23 @@
             "statusCode": 301
         },
         {
+            "source": "/page-3",
+            "destination": "/page-3-rejtou",
+            "statusCode": 301
+        },
+        {
             "source": "/scale",
             "destination": "/blog/scaling-seo-a-framework",
+            "statusCode": 301
+        },
+        {
+            "source": "/ai-audits",
+            "destination": "/services/ai-audits",
+            "statusCode": 301
+        },
+        {
+            "source": "/ai-impact",
+            "destination": "/ai-impact-seo",
             "statusCode": 301
         },
         {
