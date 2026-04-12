@@ -1861,7 +1861,7 @@ section#article.post-body img {
     }
 
     .logos img, .logo-carousel img {
-      max-width: 45%;
+      max-width: 86vw; /* padding for ipu container is 14% symmetric */
     }
 
     .wrap-two, .wrap-four {
