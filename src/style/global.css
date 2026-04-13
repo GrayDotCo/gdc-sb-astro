@@ -864,6 +864,13 @@ main > section:last-child .ipu{
   width: 100%;
 }
 
+/* Flex-wrap grid containers (wrap-two, wrap-three, wrap-four) inside a column-direction
+   ipu should not participate in flex height-sharing — they need their natural content height. */
+.inner-section .ipu > .flex-wrap {
+  flex: none;
+  width: 100%;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1424,10 +1431,6 @@ section .card-teal ul li {
   margin-top: 2rem;
 }
 
-section#our-leadership  {
-  margin-top: -5rem;
-}
-
 .card-text-on-img {
   position: relative;
   line-height: 0;
@@ -1865,7 +1868,7 @@ section#article.post-body img {
     }
 
     .wrap-two, .wrap-four {
-      flex-direction: column;
+      display: block;
     }
 
     .wrap-two > *, .wrap-three > *, .wrap-four > * {
