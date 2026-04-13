@@ -1431,10 +1431,6 @@ section .card-teal ul li {
   margin-top: 2rem;
 }
 
-/*section#our-leadership  {
-  margin-top: -5rem;
-}*/
-
 .card-text-on-img {
   position: relative;
   line-height: 0;
@@ -1875,11 +1871,6 @@ section#article.post-body img {
       display: block;
     }
 
-/*
-    section#our-leadership {
-      margin-top: 0;
-    }
-*/
     .wrap-two > *, .wrap-three > *, .wrap-four > * {
       width: 100%;
     }
