@@ -301,42 +301,41 @@ const Cta = story.content.body.find(blok => blok.component === 'CTA');
 
   <script is:inline type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Gray Dot Co",
-    "alternateName": "The Gray Dot Company",
-    "url": "https://thegray.company",
-    "logo": "https://assets.thegray.company/f/1016570/581x126/f122951287/graydotco.png",
-    "telephone": "+1 (720) 593-1855",
-    "contactPoint":{
-      "url":"https://thegray.company/contact",
-      "name":"Contact The Gray Dot Company",
-      "description":"Contact the team at The Gray Dot Company to answer questions about how we can help you grow your business. ",
-      "telephone":"+1-720-593-1855",
-      "email":"hello@thegray.company",
-      "contactType":"sales",
-      "hoursAvailable":{
-        "@type":"OpeningHoursSpecification",
-      "name":"The Gray Dot Company Hours",
-            "closes":"17:00:00",
-            "dayOfWeek":[
-              "Friday","Monday","Tuesday","Wednesday","Thursday","Friday"
-            ],
-            "opens":"09:00:00"
-          }
-        },
-        "founder":{
-          "@type": "Person",
-          "name": "Tory Gray",
-          "url": "https://thegray.company/team#tory-gray",
-          "@id": "https://thegray.company/team#tory-gray/#person"
-        },
-        "foundingDate": 2016,
-        "sameAs": [
-          "https://bsky.app/profile/thegray.company",
-          "https://www.linkedin.com/company/graydotco/",
-          "https://www.youtube.com/@GrayDotCo"
-        ]
-  }
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://thegray.company/#organization",
+  "name": "The Gray Dot Company Inc",
+  "alternateName": ["Gray Dot Co", "The Gray Dot Company"],
+  "url": "https://thegray.company",
+  "logo": "https://assets.thegray.company/f/1016570/581x126/f122951287/graydotco.png",
+  "telephone": "+1 (720) 593-1855",
+  "contactPoint": {
+    "url": "https://thegray.company/contact",
+    "name": "Contact The Gray Dot Company",
+    "description": "Contact the team at The Gray Dot Company to answer questions about how we can help you grow your business.",
+    "telephone": "+1-720-593-1855",
+    "email": "hello@thegray.company",
+    "contactType": "sales",
+    "hoursAvailable": {
+      "@type": "OpeningHoursSpecification",
+      "name": "The Gray Dot Company Hours",
+      "closes": "17:00:00",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00:00"
+    }
+  },
+  "founder": {
+    "@type": "Person",
+    "@id": "https://thegray.company/team/founder-tory-gray#person",
+    "name": "Tory Gray",
+    "url": "https://thegray.company/team/founder-tory-gray"
+  },
+  "foundingDate": "2016",
+  "sameAs": [
+    "https://bsky.app/profile/thegray.company",
+    "https://www.linkedin.com/company/graydotco/",
+    "https://www.youtube.com/@GrayDotCo"
+  ]
+}
   </script>
 </BaseLayout>
