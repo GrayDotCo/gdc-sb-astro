@@ -7,6 +7,11 @@ Disallow: /_vercel/insights/*
 Allow: /
 
 Sitemap: ${import.meta.env.SITE}/sitemap-index.xml
+
+# GSC validation test 7.15.26
+User-Agent: *
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+Allow: /
 `;
 
 const devRobots = `User-agent: *
