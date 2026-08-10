@@ -49,8 +49,8 @@
             "statusCode": 301
         },
         {
-            "source": "/blog",
-            "destination": "/what-exactly-is-web-2-0/%20",
+            "source": "/what-exactly-is-web-2-0/%20",
+            "destination": "/blog",
             "statusCode": 301
         },
         {
