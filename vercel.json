@@ -49,6 +49,11 @@
             "statusCode": 301
         },
         {
+            "source": "/blog",
+            "destination": "/what-exactly-is-web-2-0/%20",
+            "statusCode": 301
+        },
+        {
             "source": "/ai-audits",
             "destination": "/services/ai-audits",
             "statusCode": 301
@@ -1571,6 +1576,11 @@
         {
             "source": "/stories/all-about-canonicals-common-mistakes",
             "destination": "/blog/seo-guide-crawling-indexing-robots-txt-robots-meta-canonicals",
+            "statusCode": 301
+        },
+        {
+            "source": "/ai-seo-testing",
+            "destination": "https://theseocommunity.com/ai-seo-testing",
             "statusCode": 301
         }
     ]
