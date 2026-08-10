@@ -1579,7 +1579,7 @@
             "statusCode": 301
         },
         {
-            "source": "/ai-seo-testing",
+            "source": "/blog/ai-seo-testing",
             "destination": "https://theseocommunity.com/ai-seo-testing",
             "statusCode": 301
         }
