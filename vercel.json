@@ -1579,6 +1579,11 @@
             "statusCode": 301
         },
         {
+            "source": "/blog/webinar-technical-optimization-for-ai-search",
+            "destination": "https://www.youtube.com/watch?v=Gi7tWAib8ZI",
+            "statusCode": 301
+        },
+        {
             "source": "/blog/ai-seo-testing",
             "destination": "https://theseocommunity.com/ai-seo-testing",
             "statusCode": 301
