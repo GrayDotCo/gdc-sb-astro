@@ -1584,6 +1584,11 @@
             "statusCode": 301
         },
         {
+            "source": "/blog/webinar-ai-skills-for-seo-workflows",
+            "destination": "https://www.youtube.com/watch?v=C9orgNQRFi0",
+            "statusCode": 301
+        },
+        {
             "source": "/blog/ai-seo-testing",
             "destination": "https://theseocommunity.com/ai-seo-testing",
             "statusCode": 301
