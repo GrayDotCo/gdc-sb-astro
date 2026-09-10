@@ -22,7 +22,7 @@ const blogs = blok.blogs?.filter((blog) => typeof blog === "object" && blog.cont
             <a class="card-img-text" href={`/blog/${blog.slug}`}>
               <img
                 class="img-aspect"
-                src={transformImageSrc(`${blog.content.featured_image.filename}/m/`)}
+                src={transformImageSrc(`${blog.content.featured_image?.filename}/m/`)}
                 alt={blog.content.title}
                 width="450"
                 height="293"

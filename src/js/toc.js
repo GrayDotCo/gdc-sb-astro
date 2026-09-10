@@ -4,8 +4,11 @@ export function buildToc(content) {
 
     content.forEach((item) => {
         if (item.type === 'heading') {
+            const text = (item.content ?? []).map((elem) => elem.text).join('');
+            if (!text) return; // Skip empty headings so they don't swallow later subheadings
+
             const heading = {
-                text: item.content.map((elem) => elem.text).join(''), // Combine text within heading
+                text,
                 level: item.attrs.level,
                 children: [],
             };
