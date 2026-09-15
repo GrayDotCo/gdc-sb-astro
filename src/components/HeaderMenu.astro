@@ -2,15 +2,7 @@
 import { Image } from "astro:assets";
 ---
 
-<nav x-data="{ isOpen: false, openMenu: null }" x-effect="
-  if (isOpen) {
-    document.documentElement.style.setProperty('--scroll-y', window.scrollY + 'px');
-    document.body.classList.add('menu-open');
-  } else if (document.body.classList.contains('menu-open')) {
-    document.body.classList.remove('menu-open');
-    window.scrollTo(0, parseInt(document.documentElement.style.getPropertyValue('--scroll-y') || '0', 10));
-  }
-">
+<nav x-data="{ isOpen: false, openMenu: null }">
   <div class="menu-button" @click="isOpen = !isOpen; openMenu = null">
     <img class="menu-open" x-show="!isOpen" src="https://thegray.company/img/ic_menu_open.svg" width="48" height="48" alt="Open menu icon" />
     <img class="menu-close" x-show="isOpen" src="https://thegray.company/img/ic_menu_close.svg" width="48" height="48" alt="Close menu icon" />

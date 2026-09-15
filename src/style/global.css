@@ -1715,15 +1715,6 @@ section#article.post-body img {
       transition: transform 0.3s ease-in-out;
     }
 
-    /* Lock the background page from scrolling while the mobile menu is open. */
-    body.menu-open {
-      position: fixed;
-      top: calc(-1 * var(--scroll-y, 0px));
-      left: 0;
-      right: 0;
-      overflow: hidden;
-    }
-
     .menu-container.hidden {
       transform: translateX(100%);
     }
