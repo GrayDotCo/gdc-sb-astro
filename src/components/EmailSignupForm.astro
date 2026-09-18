@@ -1,0 +1,136 @@
+---
+interface Props {
+  title?: string | null;
+  buttonText?: string;
+}
+
+const { title = "Stay in the know", buttonText = "Join the mailing list" } = Astro.props as Props;
+
+// Brevo's widget expects unique element IDs; suffix them so multiple
+// instances of this form can coexist on the same page.
+const uid = crypto.randomUUID().slice(0, 8);
+const formId = `sib-form-${uid}`;
+const emailId = `EMAIL-${uid}`;
+---
+
+<!-- JS -->
+<script>
+  window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+  window.LOCALE = 'en';
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+  window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
+  window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+
+  window.translation = {
+    common: {
+      selectedList: '{quantity} list selected',
+      selectedLists: '{quantity} lists selected',
+      selectedOption: '{quantity} selected',
+      selectedOptions: '{quantity} selected',
+    }
+  };
+
+  var AUTOHIDE = Boolean(0);
+</script>
+
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+
+<script>
+  document
+    .querySelectorAll('.email-signup-form input[name="LANDING_PAGE"]')
+    .forEach((field) => {
+      (field as HTMLInputElement).value = window.location.href;
+    });
+</script>
+<!-- End JS -->
+
+<!-- Styling -->
+<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+<style>
+.sib-form {
+  background-attachment: fixed;
+  font-size: unset;
+  font-family: unset;
+  padding: unset;
+  margin: unset;
+}
+
+.email-signup-form .sib-container--large {
+  padding: unset;
+}
+
+.email-signup-form .blok-title {
+  padding-bottom: 24px;
+}
+
+.email-signup-form .btnPrimary {
+  margin-bottom: 0.5rem;
+}
+
+/* .img-left .email-signup-form div:last-child {
+  order: unset;
+  margin-bottom: unset;
+}
+*/
+.email-signup-form div:last-child {
+  order: unset;
+  margin-bottom: unset;
+}
+
+
+@media (max-width: 450px) {
+  .email-signup-form .btnPrimary {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+</style>
+<!-- End Styling -->
+
+<div class="sib-form email-signup-form">
+  <div id={`sib-form-container-${uid}`}>
+    <div id={`sib-container-${uid}`} class="sib-container--large sib-container--vertical">
+      <form id={formId} method="POST" action="https://57f8bdea.sibforms.com/serve/MUIFAGpGWN0VdtuZaameIxyWWgaaxLHjuftQHlP7GYeq8AiDFSWtyKVUdoT1l06nn7Qds1bXtAf-Dq0VPVYz0xNHutZBqYIkHgkkHTPQynOfTI22f2Z-oFf5cgKJwGaXR_IF927g4qdlHGd4ZHn4ckm0RoWP1mHmVI_LDD5rRpKvxwrtg_u83-k98abod8LV4Y_eTW6M4vZMQZho" data-type="subscription">
+        {title && (
+          <div>
+            <div class="">
+              <p class="blok-title">{title}</p>
+            </div>
+          </div>
+        )}
+        <div>
+          <div class="sib-input ">
+            <div class="form__entry entry_block">
+              <div class="form__label-row ">
+                <div class="">
+                  <input class="required email" type="text" id={emailId} name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
+                </div>
+              </div>
+
+              <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="">
+            <button class="btnPrimary" form={formId} type="submit">
+              <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+              </svg>
+              {buttonText}
+            </button>
+          </div>
+          <p class="footnote">
+            You can unsubscribe at any time using the link in our emails. For more details, review our <a href="/privacy" target="_blank">privacy policy.</a>
+          </p>
+        </div>
+
+        <input type="text" name="email_address_check" value="" class="input--hidden">
+        <input type="hidden" name="locale" value="en">
+        <input type="hidden" name="LANDING_PAGE" value="">
+      </form>
+    </div>
+  </div>
+</div>

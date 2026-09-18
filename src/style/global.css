@@ -1962,6 +1962,16 @@ section#article.post-body img {
       overflow-y: auto;
       overscroll-behavior: contain;
     }
+
+    .img-left .email-cta .padded-text {
+      margin-top: 100px;
+      margin-bottom: 40px;
+    }
+
+    .img-left .email-cta img {
+      width: 100%;
+    }
+
 }
 
 .featured-blogs .ipu {
