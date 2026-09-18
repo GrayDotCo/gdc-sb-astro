@@ -35,7 +35,7 @@ const storySEO = {
         </h2>
       </div>
       <div class="contact-form">
-        <form action="https://www.formbackend.com/f/6aec581b5d573ee6" method="POST" name="contact" id="contact">
+        <form action="https://api.staticforms.dev/submit" method="POST" name="contact" id="contact">
           <fieldset>
             <label for="email">Email</label>
             <input type="email" name="email" id="email" required />
@@ -49,6 +49,8 @@ const storySEO = {
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" cols="50" required
             ></textarea>
+            <input type="hidden" name="apiKey" value="sf_cfd00856f0fc8b3ce1aae757">
+            <input type="hidden" name="redirectTo" value="https://thegray.company/thank-you">
           </fieldset>
 
           <div class="footnote">

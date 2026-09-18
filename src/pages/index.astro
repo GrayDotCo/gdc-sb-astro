@@ -101,15 +101,15 @@ const Cta = story.content.body.find(blok => blok.component === 'CTA');
         </div>
 
         <div class="col-flex-row">
-          <img class="illustration" src="http://assets.thegray.company/f/1016570/80x80/7c249e1017/ic_verify.svg" alt="" width="64"
+          <img class="illustration" src="https://assets.thegray.company/f/1016570/80x80/7c249e1017/ic_verify.svg" alt="" width="64"
             height="64" />
           <div>
             <h3>Audits</h3>
             <ul class="services-list">
               <li>CONTENT AUDITS</li>
-              <li>TECH SEO AUDITS</li>
+              <li><a href="/services/technical-seo-audit">TECH SEO AUDITS ></a></li>
               <li><a href="/services/ai-audits">AI AUDITS ></a></li>
-              <li>JAVASCRIPT AUDITS</li>
+              <li><a href="/services/technical-seo-audit#js-seo-audit">JAVASCRIPT AUDITS ></a></li>
             </ul>
           </div>
         </div>
@@ -224,30 +224,6 @@ const Cta = story.content.body.find(blok => blok.component === 'CTA');
 
   {featuredBlogs && <StoryblokComponent blok={featuredBlogs} />}
 
-
-  <section class="bg-grey align-middle">
-    <div class="ipu">
-      <div>
-        <p class="prehead">A little experiment</p>
-        <h2>Nothing to see here</h2>
-        <p>Human friends, please ignore this little experiment that’s going to help us learn more about bots, including the links below. (We’ll share some fun results soon!)</p>
-        <div class="li-bold">
-        <ul class="services-list">
-            <li><a href="/links">Links ></a></li>
-            <li><a href="/images">Images ></a></li>
-            <li><a href="/code-page-copy">Code & page copy ></a></li>
-            <li><a href="/tables-charts">Tables & charts ></a></li>
-            <li><a href="/tables-charts-more">Tables, charts & more ></a></li>
-        </ul>
-        </div>
-      </div>
-      <div>
-        <img src="https://assets.thegray.company/f/1016570/551x367/2868850808/rendering-preview-image.png" width="480" height="280" alt="How to do an AI Crawling Audit" />
-      </div>
-    </div>
-  </section>
-
-
   <section class="no-h-padding testimonials">
     <div class="ipu">
         <div class="col-flex-row y-scroll align-center">
@@ -325,42 +301,41 @@ const Cta = story.content.body.find(blok => blok.component === 'CTA');
 
   <script is:inline type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Gray Dot Co",
-    "alternateName": "The Gray Dot Company",
-    "url": "https://thegray.company",
-    "logo": "https://assets.thegray.company/f/1016570/581x126/f122951287/graydotco.png",
-    "telephone": "+1 (720) 593-1855",
-    "contactPoint":{
-      "url":"https://thegray.company/contact",
-      "name":"Contact The Gray Dot Company",
-      "description":"Contact the team at The Gray Dot Company to answer questions about how we can help you grow your business. ",
-      "telephone":"+1-720-593-1855",
-      "email":"hello@thegray.company",
-      "contactType":"sales",
-      "hoursAvailable":{
-        "@type":"OpeningHoursSpecification",
-      "name":"The Gray Dot Company Hours",
-            "closes":"17:00:00",
-            "dayOfWeek":[
-              "Friday","Monday","Tuesday","Wednesday","Thursday","Friday"
-            ],
-            "opens":"09:00:00"
-          }
-        },
-        "founder":{
-          "@type": "Person",
-          "name": "Tory Gray",
-          "url": "https://thegray.company/team#tory-gray",
-          "@id": "https://thegray.company/team#tory-gray/#person"
-        },
-        "foundingDate": 2016,
-        "sameAs": [
-          "https://bsky.app/profile/thegray.company",
-          "https://www.linkedin.com/company/graydotco/",
-          "https://www.youtube.com/@GrayDotCo"
-        ]
-  }
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://thegray.company/#organization",
+  "name": "The Gray Dot Company Inc",
+  "alternateName": ["Gray Dot Co", "The Gray Dot Company"],
+  "url": "https://thegray.company",
+  "logo": "https://assets.thegray.company/f/1016570/581x126/f122951287/graydotco.png",
+  "telephone": "+1 (720) 593-1855",
+  "contactPoint": {
+    "url": "https://thegray.company/contact",
+    "name": "Contact The Gray Dot Company",
+    "description": "Contact the team at The Gray Dot Company to answer questions about how we can help you grow your business.",
+    "telephone": "+1-720-593-1855",
+    "email": "hello@thegray.company",
+    "contactType": "sales",
+    "hoursAvailable": {
+      "@type": "OpeningHoursSpecification",
+      "name": "The Gray Dot Company Hours",
+      "closes": "17:00:00",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00:00"
+    }
+  },
+  "founder": {
+    "@type": "Person",
+    "@id": "https://thegray.company/team/founder-tory-gray#person",
+    "name": "Tory Gray",
+    "url": "https://thegray.company/team/founder-tory-gray"
+  },
+  "foundingDate": "2016",
+  "sameAs": [
+    "https://bsky.app/profile/thegray.company",
+    "https://www.linkedin.com/company/graydotco/",
+    "https://www.youtube.com/@GrayDotCo"
+  ]
+}
   </script>
 </BaseLayout>

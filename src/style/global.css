@@ -22,6 +22,7 @@
 html {
   font-size: 16px;
   word-wrap: break-word;
+  overflow-x: hidden;
 }
 
 :root {
@@ -699,7 +700,7 @@ ul.nav-links, ul.co-menu {
   letter-spacing: .05em;
   font-weight: 600;
   text-decoration: none;
-  text-align: center;
+  text-align: left;
   line-height: 1;
 }
 
@@ -709,6 +710,7 @@ ul.nav-links, ul.co-menu {
 
 .nav-links li:last-child a {
   padding-right: 0;
+  color: var(--purple);
 }
 
 .dropdown-content {
@@ -718,18 +720,34 @@ ul.nav-links, ul.co-menu {
   min-width: 300px;
   z-index: 1;
   top: 100%;
-  left: 0;
-  margin-left: -50%;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 30px 40px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Anchor precisely to the trigger where CSS Anchor Positioning is supported;
+   the centered position:relative layout above is the fallback everywhere else. */
+@supports (anchor-name: --dropdown-trigger) {
+  .dropdown-content {
+    position-anchor: --dropdown-trigger;
+    top: anchor(bottom);
+    left: anchor(center);
+  }
 }
 
 .dropdown a {
   position: relative;
 }
 
+.dropdown > a {
+  anchor-name: --dropdown-trigger;
+  cursor: pointer;
+}
+
 .dropdown {
+  position: relative;
   margin-right: 1.25rem !important;
 }
 
@@ -742,16 +760,19 @@ ul.nav-links, ul.co-menu {
   height: 16px;
 }
 
-.dropdown:hover a:after {
+.dropdown:hover a:after,
+.dropdown.is-open a:after {
   filter: invert(56%) sepia(94%) saturate(329%) hue-rotate(135deg) brightness(93%) contrast(91%);
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown.is-open .dropdown-content {
   display: flex;
   min-width: 300px;
 }
 
-.dropdown:hover > a {
+.dropdown:hover > a,
+.dropdown.is-open > a {
   color: #30B9C1;
 }
 
@@ -1596,6 +1617,7 @@ footer .container > div:last-child a {
   margin: 0 auto 3rem;
   padding: 0;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   grid-template-areas:
     "toc"
     "post-body";
@@ -1683,13 +1705,16 @@ section#article.post-body img {
       top: 0;
       right: 0;
       display: flex;
-      flex-direction: column-reverse;
-      justify-content: flex-end;
+      flex-direction: column;
+      justify-content: flex-start;
       background: var(--light-grey);
       padding: 6rem 2rem 2rem;
       gap: 20px;
       width: 100%;
       height: 100vh;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior: contain;
       transition: transform 0.3s ease-in-out;
     }
 
@@ -1729,11 +1754,29 @@ section#article.post-body img {
       rotate: -90deg;
     }
 
+    .dropdown.is-open > a:after {
+      rotate: 0deg;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: none;
+    }
+
     .dropdown-content {
+      display: none;
+      position: static;
       flex-direction: column;
-      margin-left: 0;
+      margin: 0;
+      transform: none;
       gap: 20px;
-      width: calc(100vw - 4rem);
+      width: 100%;
+      padding: 1rem 0 1rem 1.5rem;
+      box-shadow: none;
+      border-radius: 0;
+    }
+
+    .dropdown.is-open .dropdown-content {
+      display: flex;
     }
 
     .hero-color {
@@ -1951,7 +1994,7 @@ section#article.post-body img {
       max-width: var(--container-width);
       margin-left: auto;
       margin-right: auto;
-      grid-template-columns: 1fr 3fr;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
       grid-template-areas: "toc post-body";
     }
 

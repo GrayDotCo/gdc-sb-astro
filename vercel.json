@@ -49,6 +49,11 @@
             "statusCode": 301
         },
         {
+            "source": "/what-exactly-is-web-2-0/%20",
+            "destination": "/blog",
+            "statusCode": 301
+        },
+        {
             "source": "/ai-audits",
             "destination": "/services/ai-audits",
             "statusCode": 301
@@ -1571,6 +1576,21 @@
         {
             "source": "/stories/all-about-canonicals-common-mistakes",
             "destination": "/blog/seo-guide-crawling-indexing-robots-txt-robots-meta-canonicals",
+            "statusCode": 301
+        },
+        {
+            "source": "/blog/webinar-technical-optimization-for-ai-search",
+            "destination": "https://www.youtube.com/watch?v=Gi7tWAib8ZI",
+            "statusCode": 301
+        },
+        {
+            "source": "/blog/webinar-ai-skills-for-seo-workflows",
+            "destination": "https://www.youtube.com/watch?v=C9orgNQRFi0",
+            "statusCode": 301
+        },
+        {
+            "source": "/blog/ai-seo-testing",
+            "destination": "https://theseocommunity.com/ai-seo-testing",
             "statusCode": 301
         }
     ]

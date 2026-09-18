@@ -8,7 +8,7 @@ export function generateSlug(text) {
 }
 
 export function generateSlugFromContent(content) {
-    const text = content.map(elem => elem.text).join('');
+    const text = (content ?? []).map(elem => elem.text).join('');
     return text
         .toLowerCase()
         .replace(/[^a-z0-9]+/g, '-')
