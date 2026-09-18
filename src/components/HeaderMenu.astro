@@ -1,0 +1,98 @@
+---
+import { Image } from "astro:assets";
+---
+
+<nav x-data="{ isOpen: false, openMenu: null }">
+  <div class="menu-button" @click="isOpen = !isOpen; openMenu = null">
+    <img class="menu-open" x-show="!isOpen" src="https://thegray.company/img/ic_menu_open.svg" width="48" height="48" alt="Open menu icon" />
+    <img class="menu-close" x-show="isOpen" src="https://thegray.company/img/ic_menu_close.svg" width="48" height="48" alt="Close menu icon" />
+  </div>
+   <div class="menu-container" :class="{ 'hidden': !isOpen }" @click.outside="openMenu = null">
+    <ul class="nav-links">
+      <li class="dropdown" :class="{ 'is-open': openMenu === 'consulting' }">
+        <a role="button" tabindex="0" aria-haspopup="true" :aria-expanded="(openMenu === 'consulting').toString()"
+          @click="openMenu = openMenu === 'consulting' ? null : 'consulting'"
+          @keydown.enter.prevent="openMenu = openMenu === 'consulting' ? null : 'consulting'"
+          @keydown.space.prevent="openMenu = openMenu === 'consulting' ? null : 'consulting'"
+          @keydown.escape="openMenu = null">Consulting</a>
+        <div class="dropdown-content">
+          <div class="column">
+            <a href="/services/seo">SEO</a>
+            <a href="/services/content-marketing">Content Marketing</a>
+            <a href="/services/seo-product-management">SEO Product Management</a>
+            <a href="/digital-market-intelligence">Market Intelligence</a>
+            <a href="/services/paid-search">Paid Search</a>
+          </div>
+        </div>
+      </li>
+      <li class="dropdown" :class="{ 'is-open': openMenu === 'solutions' }">
+        <a role="button" tabindex="0" aria-haspopup="true" :aria-expanded="(openMenu === 'solutions').toString()"
+          @click="openMenu = openMenu === 'solutions' ? null : 'solutions'"
+          @keydown.enter.prevent="openMenu = openMenu === 'solutions' ? null : 'solutions'"
+          @keydown.space.prevent="openMenu = openMenu === 'solutions' ? null : 'solutions'"
+          @keydown.escape="openMenu = null">Solutions</a>
+        <div class="dropdown-content">
+          <div class="column">
+            <p class="subcat">Analyses</p>
+            <a href="/services/opportunity-analysis">Opportunity Analysis</a>
+            <a href="/services/competitive-analysis">Competitive Analysis</a>
+            <a href="/services/seo-traffic-investigation">Traffic Loss Investigation</a>
+          </div>
+          <div class="column">
+            <p class="subcat">Audits</p>
+            <a href="/services/content-audits">Content Audits</a>
+            <a href="/services/technical-seo-audit">Tech SEO Audits</a>
+            <a href="/services/ai-audits">AI Audits</a>
+          </div>
+          <div class="column">
+            <p class="subcat">Strategy</p>
+            <a href="/services/content-roadmap">Content Roadmap</a>
+            <a href="/services/site-migrations">Site Migrations</a>
+          </div>
+        </div>
+      </li>
+      <li class="dropdown" :class="{ 'is-open': openMenu === 'about' }">
+        <a role="button" tabindex="0" aria-haspopup="true" :aria-expanded="(openMenu === 'about').toString()"
+          @click="openMenu = openMenu === 'about' ? null : 'about'"
+          @keydown.enter.prevent="openMenu = openMenu === 'about' ? null : 'about'"
+          @keydown.space.prevent="openMenu = openMenu === 'about' ? null : 'about'"
+          @keydown.escape="openMenu = null">About</a>
+        <div class="dropdown-content">
+          <div class="column">
+            <a href="/approach">Approach</a>
+            <a href="/team">Team</a>
+          </div>
+        </div>
+      </li>
+      <li class="dropdown" :class="{ 'is-open': openMenu === 'results' }">
+        <a role="button" tabindex="0" aria-haspopup="true" :aria-expanded="(openMenu === 'results').toString()"
+          @click="openMenu = openMenu === 'results' ? null : 'results'"
+          @keydown.enter.prevent="openMenu = openMenu === 'results' ? null : 'results'"
+          @keydown.space.prevent="openMenu = openMenu === 'results' ? null : 'results'"
+          @keydown.escape="openMenu = null">Results</a>
+        <div class="dropdown-content">
+          <div class="column">
+            <a href="/results">Case Studies</a>
+            <a href="/results#testimonials">Testimonials</a>
+          </div>
+        </div>
+      </li>
+      <li class="dropdown" :class="{ 'is-open': openMenu === 'resources' }">
+        <a role="button" tabindex="0" aria-haspopup="true" :aria-expanded="(openMenu === 'resources').toString()"
+          @click="openMenu = openMenu === 'resources' ? null : 'resources'"
+          @keydown.enter.prevent="openMenu = openMenu === 'resources' ? null : 'resources'"
+          @keydown.space.prevent="openMenu = openMenu === 'resources' ? null : 'resources'"
+          @keydown.escape="openMenu = null">Resources</a>
+        <div class="dropdown-content">
+          <div class="column">
+            <a href="/blog">Blog</a>
+            <a href="/resources#tools">SEO Tools</a>
+            <a href="/resources#research">Research</a>
+            <a href="/resources#templates">Templates</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+ </nav>
