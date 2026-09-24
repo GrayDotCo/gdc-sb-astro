@@ -926,46 +926,6 @@
       </image:image>
   </url>
   <url>
-    <loc>https://thegray.company/services</loc>
-    <priority>0.9</priority>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/600x328/9d3baf7e42/meco_site.png/m/</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/80x80/18f0e3a115/ic_playbook.svg/m/</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/80x80/91ed47b0bc/ic_analytics.svg/m/</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/80x80/e2df3378a6/ic_domain.svg/m/</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/1200x2141/3a83a9a065/direct.jpeg/m/</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/297x212/0b75f7bea9/kurin.png/m/</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/1200x800/94aeec9ad1/measure.jpeg/m/</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/418x215/ffbc6cc5c3/rettu.png/m/</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/1200x673/a6936d6228/look.jpeg/m/</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/270x280/32cf4d9742/distan.png/m/</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/120x120/59cec8c56a/melanie-almeida.jpeg/m/120x120</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/324x231/9b4534016c/walla.png/m/</image:loc>
-      </image:image>
-  </url>
-  <url>
     <loc>https://thegray.company/resources/ai-difference-engine</loc>
     <priority>0.9</priority>
       <image:image>
@@ -1558,56 +1518,6 @@
       </image:image>
       <image:image>
         <image:loc>https://assets.thegray.company/f/1016570/379x177/806373c531/eveaport.png/m/</image:loc>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://thegray.company/blog/startup-seo-it-depends-part-ii-when-what-how</loc>
-    <priority>0.8</priority>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/400x267/0816a8418f/people-in-tech-startup-seo-copy-min.png</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/400x400/729e17e9e6/crystal.jpeg</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/400x400/2c6d9b001d/bernard-2022-min.jpg</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/304x304/8a3da1bf1f/jo.jpeg</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/400x400/9176a3a797/danielle.jpeg</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/400x400/b99ac68c78/roxana.jpeg</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/400x400/89e5cb6b21/lidia.jpeg</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/400x400/1f1fac55f6/lazarina.jpeg</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/400x400/d5c781288b/sara.jpeg</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/400x400/c784aaffa5/gwen.jpeg</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/400x400/69b502bb34/jamar.jpeg</image:loc>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://thegray.company/blog/startup-seo-it-depends-part-i</loc>
-    <priority>0.8</priority>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/400x267/35b0bdbe6f/should-your-startup-do-seo-copy-min.jpg</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/980x626/a389b2622d/mo63ph0czv76oelvzymugsq.png</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://assets.thegray.company/f/1016570/1167x295/fed143f97d/mnetyd2fdb-kl2rffxtm8i3ib0nodbdypqhfgmxpj6foy5sff31hz3r7wrdgemdlj5dtwnaf57onnqlyranuahyckd7vce7q.png</image:loc>
       </image:image>
   </url>
   <url>
