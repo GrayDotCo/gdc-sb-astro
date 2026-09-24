@@ -145,22 +145,22 @@
         },
         {
             "source": "/services/name%20this",
-            "destination": "/services",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/services/name-this",
-            "destination": "/services",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/services/name",
-            "destination": "/services",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/services/data",
-            "destination": "/services",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
@@ -280,57 +280,57 @@
         },
         {
             "source": "/services/google-analytics-gtm-audits-tracking-setup",
-            "destination": "/services",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/tactics",
-            "destination": "/services",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/software-development",
-            "destination": "/services",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/software-services/development",
-            "destination": "/services",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/software-services/training",
-            "destination": "/services",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/software-services/consulting",
-            "destination": "/services",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/software-services",
-            "destination": "/services",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/services/software-consulting",
-            "destination": "/services",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/services/software-development",
-            "destination": "/services",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/services/software-trainings",
-            "destination": "/services",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/services/i-made-this-up",
-            "destination": "/services",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
@@ -355,12 +355,12 @@
         },
         {
             "source": "/software-development-1",
-            "destination": "/services",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
             "source": "/services/facebook-twitter-youtube-marketing",
-            "destination": "/services",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
@@ -1586,6 +1586,26 @@
         {
             "source": "/blog/webinar-ai-skills-for-seo-workflows",
             "destination": "https://www.youtube.com/watch?v=C9orgNQRFi0",
+            "statusCode": 301
+        },
+        {
+            "source": "/blog/startup-seo-it-depends-part-ii-when-what-how",
+            "destination": "/blog",
+            "statusCode": 301
+        },
+        {
+            "source": "/blog/startup-seo-it-depends-part-i",
+            "destination": "/blog",
+            "statusCode": 301
+        },
+        {
+            "source": "/services",
+            "destination": "/services/seo",
+            "statusCode": 301
+        },
+        {
+            "source": "/services/",
+            "destination": "/services/seo",
             "statusCode": 301
         },
         {
