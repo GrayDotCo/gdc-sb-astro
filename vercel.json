@@ -1510,47 +1510,47 @@
         },
         {
             "source": "/industry/dtc",
-            "destination": "/approach",
+            "destination": "/industry",
             "statusCode": 301
         },
         {
             "source": "/industry/fintech",
-            "destination": "/approach",
+            "destination": "/industry",
             "statusCode": 301
         },
         {
             "source": "/industry/saas",
-            "destination": "/approach",
+            "destination": "/industry",
             "statusCode": 301
         },
         {
             "source": "/industry/tech-startups",
-            "destination": "/approach",
+            "destination": "/industry",
             "statusCode": 301
         },
         {
             "source": "/industry/healthtech",
-            "destination": "/approach",
+            "destination": "/industry",
             "statusCode": 301
         },
         {
             "source": "/industry/legaltech",
-            "destination": "/approach",
+            "destination": "/industry",
             "statusCode": 301
         },
         {
             "source": "/industry/not-for-profit",
-            "destination": "/approach",
+            "destination": "/industry",
             "statusCode": 301
         },
         {
             "source": "/industry/regulated-industries",
-            "destination": "/approach",
+            "destination": "/industry",
             "statusCode": 301
         },
         {
             "source": "/industry/ecommerce",
-            "destination": "/approach",
+            "destination": "/industry",
             "statusCode": 301
         },
         {
@@ -1606,14 +1606,6 @@
         {
             "source": "/services/",
             "destination": "/services/seo",
-            "statusCode": 301
-        },{
-            "source": "/industry",
-            "destination": "/approach",
-            "statusCode": 301
-        },{
-            "source": "/industry/",
-            "destination": "/approach",
             "statusCode": 301
         },
         {
