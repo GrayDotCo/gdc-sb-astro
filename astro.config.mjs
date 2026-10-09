@@ -46,6 +46,7 @@ export default defineConfig({
       hero: "storyblok/Hero",
       iconcard: "storyblok/IconCard",
       cta: "storyblok/Cta",
+      email_cta: "storyblok/EmailCta",
       image: "storyblok/Image",
       leftright: "storyblok/LeftRight",
       listitem: "storyblok/Listitem",

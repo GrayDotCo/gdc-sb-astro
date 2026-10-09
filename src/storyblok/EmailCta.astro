@@ -1,0 +1,28 @@
+---
+import { storyblokEditable } from "@storyblok/astro";
+import EmailSignupForm from "../components/EmailSignupForm.astro";
+import { transformImageSrc } from "../utils/imageUtils";
+
+const { blok } = Astro.props;
+const TitleElement = blok.Heading_level || "p";
+const bgcolor = blok.bgcolor || "white";
+---
+
+<section {...storyblokEditable(blok)} class={`align-middle img-left bg-${bgcolor}`}>
+  <div class="ipu left-right email-cta">
+    <div class="align-center">
+      <img
+        src={blok.Feature_image?.filename ? transformImageSrc(`${blok.Feature_image.filename}/m/`) : "https://assets.thegray.company/f/1016570/373x212/5252821ef4/nur.png"}
+        width="600"
+        height="400"
+        alt={blok.Feature_image?.alt || "Decorative shape"}
+      />
+    </div>
+    <div class="padded-text">
+      {blok.Prehead && <p class="prehead">{blok.Prehead}</p>}
+      <TitleElement class="blok-title">{blok.Headline_text}</TitleElement>
+      {blok.Description_text && <p>{blok.Description_text}</p>}
+      <EmailSignupForm title={null} buttonText={blok.Button_text || "Send it"} />
+    </div>
+  </div>
+</section>
