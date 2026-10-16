@@ -6,14 +6,18 @@ import { useStoryblokApi } from "@storyblok/astro";
 const { blok } = Astro.props;
 const TitleElement = blok.heading_level || "p";
 
-// Fetch the full author data
-const storyblokApi = useStoryblokApi();
-const { data } = await storyblokApi.get("cdn/stories", {
-  by_uuids: blok.testimonials.join(","),
-  version: "published",
-});
 
-const testimonials = data.stories;
+const storyblokApi = useStoryblokApi();
+
+const uuids = (blok.testimonials ?? []).filter(Boolean);
+let testimonials = [];
+if (uuids.length) {
+  const { data } = await storyblokApi.get("cdn/stories", {
+    by_uuids: uuids.join(","),
+    version: "published",
+  });
+  testimonials = data.stories;
+}
 ---
 
 <section {...storyblokEditable(blok)} class="testimonials">
