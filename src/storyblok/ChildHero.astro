@@ -32,8 +32,10 @@ if (blok.link) {
         )
       }
     </div>
-    <div class="img-hero-home">
-      <img src={transformImageSrc(`${blok.image.filename}/m/`)} width="200" alt="decorative shape"/>
-    </div>
+    {blok.image?.filename && (
+      <div class="img-hero-home">
+        <img src={transformImageSrc(`${blok.image.filename}/m/`)} width="200" alt="decorative shape"/>
+      </div>
+    )}
   </div>
 </section>
