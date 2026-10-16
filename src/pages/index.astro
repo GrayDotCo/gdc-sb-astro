@@ -1,28 +1,31 @@
 ---
-import { useStoryblokApi } from "@storyblok/astro";
 import StoryblokComponent from "@storyblok/astro/StoryblokComponent.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { createBlokSlots, getStory } from "../lib/storyblok";
 import { transformImageSrc } from "../utils/imageUtils";
 
-const sbApi = useStoryblokApi();
-const { data } = await sbApi.get("cdn/stories/home", {
-  version: "draft",
-  resolve_links: "url",
-  resolve_relations: ['featured_blogs.blogs'],
-});
+const { story, seo: storySEO } = await getStory("home");
 
-const story = data.story;
-const storySEO = {
-  title: story.content.page_title,
-  description: story.content.meta_description,
-  ogImage: story.content.og_image?.filename,
-  metaRobots: story.content.noindex
-};
+const slots = createBlokSlots(story.content.body, "index.astro");
 
-const logoCarousel = story.content.body.find(blok => blok.component === 'carousel');
-const featuredBlogs = story.content.body.find(blok => blok.component === 'featured_blogs');
-const Cta = story.content.body.find(blok => blok.component === 'CTA');
+// On-page blok definitions
+const showConsulting = slots.replaces(
+  "e531c9d8-5769-479c-a469-9f16b54089ca", // Left Right - "An integrated partner to guide the path forward"
+);
+const showClientLogos = slots.replaces(
+  "0c06b2c1-cafd-48e2-bfc6-527d790a769b", // Logo Grid - "Lasting partnerships over logos"
+);
 
+const featuredBlogs = slots.take("featured_blogs");
+const cta = slots.take("CTA");
+
+const arbitraryBloks = slots.rest();
+// End On-page blok definitions
+
+
+
+// TODO: this page renders bloks itself rather than delegating to Page.astro
+// Will need some CSS changes in addition to rendering and DOM structure
 ---
 
 <BaseLayout
@@ -30,6 +33,7 @@ const Cta = story.content.body.find(blok => blok.component === 'CTA');
   description={storySEO.description}
   ogImage={storySEO.ogImage}
   metaRobots={storySEO.metaRobots}
+  customStructuredData={storySEO.customStructuredData}
 >
 
   <section class="hero">
@@ -56,6 +60,7 @@ const Cta = story.content.body.find(blok => blok.component === 'CTA');
   </section>
 
 
+{showConsulting && (
   <section class="align-middle img-left">
     <div class="ipu">
       <div>
@@ -77,6 +82,7 @@ const Cta = story.content.body.find(blok => blok.component === 'CTA');
       </div>
     </div>
   </section>
+)}
 
 
   <section class="bg-grey inner-section">
@@ -145,6 +151,7 @@ const Cta = story.content.body.find(blok => blok.component === 'CTA');
   </section>
 
 
+{showClientLogos && (
   <section class="bg-grey">
     <div class="ipu">
       <div class="align-center">
@@ -165,6 +172,7 @@ const Cta = story.content.body.find(blok => blok.component === 'CTA');
       </div>
     </div>
   </section>
+)}
 
 
   <section>
@@ -221,6 +229,8 @@ const Cta = story.content.body.find(blok => blok.component === 'CTA');
       </div>
     </div>
   </section>
+
+  {arbitraryBloks.map((blok) => <StoryblokComponent blok={blok} />)}
 
   {featuredBlogs && <StoryblokComponent blok={featuredBlogs} />}
 
