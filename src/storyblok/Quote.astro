@@ -20,7 +20,9 @@ if (blok.link) {
 ---
 
 <div {...storyblokEditable(blok)} class="card-testimonial">
-  <img src={transformImageSrc(`${blok.headshot.filename}/m/160x160`)} alt={blok.headshot.alt} width="80" height="80" />
+  {blok.headshot?.filename && (
+    <img src={transformImageSrc(`${blok.headshot.filename}/m/160x160`)} alt={blok.headshot.alt} width="80" height="80" />
+  )}
   {blok.quote_body && <Wysiwyg blok={blok} content={blok.quote_body} class="quote"/>}
   <p>{blok.name} · {blok.job_title}</p>
 </div>
