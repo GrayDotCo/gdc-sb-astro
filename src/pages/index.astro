@@ -9,12 +9,10 @@ const { story, seo: storySEO } = await getStory("home");
 const slots = createBlokSlots(story.content.body, "index.astro");
 
 // On-page blok definitions
-const showConsulting = slots.replaces(
-  "e531c9d8-5769-479c-a469-9f16b54089ca", // Left Right - "An integrated partner to guide the path forward"
-);
-const showClientLogos = slots.replaces(
-  "0c06b2c1-cafd-48e2-bfc6-527d790a769b", // Logo Grid - "Lasting partnerships over logos"
-);
+// Examples to show the usage
+// const showConsulting = slots.replaces(
+//  "e531c9d8-5769-479c-a469-9f16b54089ca", // Left Right - "An integrated partner to guide the path forward"
+// );
 
 const featuredBlogs = slots.take("featured_blogs");
 const cta = slots.take("CTA");
@@ -60,7 +58,6 @@ const arbitraryBloks = slots.rest();
   </section>
 
 
-{showConsulting && (
   <section class="align-middle img-left">
     <div class="ipu">
       <div>
@@ -82,7 +79,6 @@ const arbitraryBloks = slots.rest();
       </div>
     </div>
   </section>
-)}
 
 
   <section class="bg-grey inner-section">
@@ -151,7 +147,6 @@ const arbitraryBloks = slots.rest();
   </section>
 
 
-{showClientLogos && (
   <section class="bg-grey">
     <div class="ipu">
       <div class="align-center">
@@ -172,7 +167,6 @@ const arbitraryBloks = slots.rest();
       </div>
     </div>
   </section>
-)}
 
 
   <section>
