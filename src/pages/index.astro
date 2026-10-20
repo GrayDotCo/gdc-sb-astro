@@ -8,8 +8,7 @@ const { story, seo: storySEO } = await getStory("home");
 
 const slots = createBlokSlots(story.content.body, "index.astro");
 
-// On-page blok definitions
-// Examples to show the usage
+// On-page blok definitions. Example to show the usage to allow hard-coded bloks to be removed from the arbitrary slot
 // const showConsulting = slots.replaces(
 //  "e531c9d8-5769-479c-a469-9f16b54089ca", // Left Right - "An integrated partner to guide the path forward"
 // );
@@ -108,7 +107,7 @@ const arbitraryBloks = slots.rest();
           <div>
             <h3>Audits</h3>
             <ul class="services-list">
-              <li>CONTENT AUDITS</li>
+              <li><a href="/services/content-audits">CONTENT AUDITS ></li>
               <li><a href="/services/technical-seo-audit">TECH SEO AUDITS ></a></li>
               <li><a href="/services/ai-audits">AI AUDITS ></a></li>
               <li><a href="/services/technical-seo-audit#js-seo-audit">JAVASCRIPT AUDITS ></a></li>
@@ -121,8 +120,8 @@ const arbitraryBloks = slots.rest();
           <div>
             <h3>Strategy</h3>
             <ul class="services-list">
-              <li>CONTENT STRATEGY</li>
               <li>SEO ROADMAP</li>
+              <li><a href="/services/content-roadmap">CONTENT ROADMAP ></li>
               <li><a href="/services/site-migrations">SITE MIGRATIONS ></a></li>
             </ul>
           </div>
@@ -204,7 +203,7 @@ const arbitraryBloks = slots.rest();
   </section>
 
 
-  <section class="bg-grey img-left">
+  <section class="bg-grey">
     <div class="ipu">
       <div>
         <p class="prehead">FREE RESOURCES</p>
