@@ -8,14 +8,6 @@ const { story, seo: storySEO } = await getStory("home");
 
 const slots = createBlokSlots(story.content.body, "index.astro");
 
-// On-page blok definitions
-const showConsulting = slots.replaces(
-  "e531c9d8-5769-479c-a469-9f16b54089ca", // Left Right - "An integrated partner to guide the path forward"
-);
-const showClientLogos = slots.replaces(
-  "0c06b2c1-cafd-48e2-bfc6-527d790a769b", // Logo Grid - "Lasting partnerships over logos"
-);
-
 const featuredBlogs = slots.take("featured_blogs");
 const cta = slots.take("CTA");
 
@@ -60,7 +52,6 @@ const arbitraryBloks = slots.rest();
   </section>
 
 
-{showConsulting && (
   <section class="align-middle img-left">
     <div class="ipu">
       <div>
@@ -82,7 +73,6 @@ const arbitraryBloks = slots.rest();
       </div>
     </div>
   </section>
-)}
 
 
   <section class="bg-grey inner-section">
@@ -112,7 +102,7 @@ const arbitraryBloks = slots.rest();
           <div>
             <h3>Audits</h3>
             <ul class="services-list">
-              <li>CONTENT AUDITS</li>
+              <li><a href="/services/content-audits">CONTENT AUDITS ></li>
               <li><a href="/services/technical-seo-audit">TECH SEO AUDITS ></a></li>
               <li><a href="/services/ai-audits">AI AUDITS ></a></li>
               <li><a href="/services/technical-seo-audit#js-seo-audit">JAVASCRIPT AUDITS ></a></li>
@@ -125,8 +115,8 @@ const arbitraryBloks = slots.rest();
           <div>
             <h3>Strategy</h3>
             <ul class="services-list">
-              <li>CONTENT STRATEGY</li>
               <li>SEO ROADMAP</li>
+              <li><a href="/services/content-roadmap">CONTENT ROADMAP ></li>
               <li><a href="/services/site-migrations">SITE MIGRATIONS ></a></li>
             </ul>
           </div>
@@ -151,7 +141,6 @@ const arbitraryBloks = slots.rest();
   </section>
 
 
-{showClientLogos && (
   <section class="bg-grey">
     <div class="ipu">
       <div class="align-center">
@@ -172,7 +161,6 @@ const arbitraryBloks = slots.rest();
       </div>
     </div>
   </section>
-)}
 
 
   <section>
