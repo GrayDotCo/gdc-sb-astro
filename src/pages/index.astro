@@ -12,14 +12,11 @@ const slots = createBlokSlots(story.content.body, "index.astro");
 // const showConsulting = slots.replaces(
 //  "e531c9d8-5769-479c-a469-9f16b54089ca", // Left Right - "An integrated partner to guide the path forward"
 // );
-
-const featuredBlogs = slots.take("featured_blogs");
-const cta = slots.take("CTA");
-
-const arbitraryBloks = slots.rest();
+// const cta = slots.take("CTA");
+//   used as `{cta && <StoryblokComponent blok={cta} />}`
 // End On-page blok definitions
 
-
+const arbitraryBloks = slots.rest();
 
 // TODO: this page renders bloks itself rather than delegating to Page.astro
 // Will need some CSS changes in addition to rendering and DOM structure
@@ -225,8 +222,6 @@ const arbitraryBloks = slots.rest();
 
   {arbitraryBloks.map((blok) => <StoryblokComponent blok={blok} />)}
 
-  {featuredBlogs && <StoryblokComponent blok={featuredBlogs} />}
-
   <section class="no-h-padding testimonials">
     <div class="ipu">
         <div class="col-flex-row y-scroll align-center">
@@ -297,8 +292,6 @@ const arbitraryBloks = slots.rest();
     </div>
   </section>
 
-
-  {cta && <StoryblokComponent blok={cta} />}
 
   <script is:inline type="application/ld+json">
   {
