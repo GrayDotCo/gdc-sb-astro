@@ -4,6 +4,7 @@ const prodRobots = `User-agent: *
 Disallow: /cdn-fpw/*
 Disallow: /cdn-cgi/*
 Disallow: /_vercel/insights/*
+Disallow: /sandbox*
 Allow: /
 
 Sitemap: ${import.meta.env.SITE}/sitemap-index.xml
