@@ -30,8 +30,8 @@ const LeftRight = story.content.body.find(blok => blok.component === 'leftright'
   <section class="align-middle">
 		<div class="ipu">
 	        <div>
-	            <h1><s>Fit the mold</s><br/>Break the mold</h1>
-	            <p>Our approach is a little different. <br/>After all, your business is too.</p>
+	            <h1>Solutions over silos</h1>
+	            <p>Our approach is all about connecting the dots between strategy, tech, data, and teams. We look beyond dividing lines like GEO and SEO to pinpoint meaningful optimizations and guide seamless implementations that win Search with a capital S.</p>
 	            <a href="/contact" class="btnPrimary">Connect with an expert</a>
 	        </div>
 	        <div>
@@ -64,14 +64,14 @@ const LeftRight = story.content.body.find(blok => blok.component === 'leftright'
 	        		<div class="step-content">
 		        		<img class="icon" src="img/icons/ic_discover.svg" alt="" width="64" height="64" />
 		        		<h4>Discover</h4>
-		        		<p>Digital Market Intelligence assesses your market, answers your most pressing questions, and pinpoints untapped opportunities specific to your brand.</p>
+		        		<p>We gather rich data  and context that answers complex questions and shapes clear, actionable insights — from market intelligence to rapidly evolving tech criteria.</p>
 	        		</div>
 	        	</div>
 	        	<div class="step step-three">
 	        		<div class="step-content">
 		        		<img class="icon" src="img/icons/ic_tailor.svg" alt="" width="64" height="64" />
 		        		<h4>Tailor</h4>
-		        		<p>Our team of experts identifies custom insights and recommendations tailored to the nuances of your business, audience, and search landscape.</p>
+		        		<p> Our team of experts extracts insights and develop recommendations tailored to the nuances of your business, audience, search landscape, and long-term goals.</p>
 	        		</div>
 	        	</div>
 	        	<div class="step step-four">
@@ -110,24 +110,12 @@ const LeftRight = story.content.body.find(blok => blok.component === 'leftright'
 	            <!--<a href="/digital-market-intelligence" class="btnPrimary">Learn more</a>-->
 	        </div>
 	        <div class="add-margin-t">
-	        	<img src="https://assets.thegray.company/f/1016570/540x360/d9d6bb97f0/integrate-small.jpeg" alt="" width="540" height="360" />
+	        	<img src="https://assets.thegray.company/f/1016570/600x400/6ffd4da17f/seo-team-analytics.png" alt="Group of five SEO coworkers standing together and reviewing colorful charts and graphs on a large wall-mounted data dashboard screen." width="540" height="360" />
 	        </div>
 	    </div>
     </section>
 
-    <section class="align-middle img-left">
-    	<div class="ipu">
-	        <div>
-	            <h2>But first, data...</h2>
-	            <p>DMI is a game-changing approach to market intelligence (aka your new competitive advantage). In the discovery phase, we leverage first- and third-party data sources to distill compelling insights about your audience, fast. Then we use those learnings to shape the strategies that inspire them to action.</p>
-	            <a href="/digital-market-intelligence" class="btnPrimary">Learn more</a>
-	        </div>
-	        <div>
-	        	<img src="https://assets.thegray.company/f/1016570/267x239/322cd3999c/inerz.png" alt="" width="250" height="168" />
-	        </div>
-	    </div>
-    </section>
-
+  {LeftRight && <StoryblokComponent blok={LeftRight} />}
 
 	<section>
 		<div class="ipu">
@@ -194,8 +182,6 @@ const LeftRight = story.content.body.find(blok => blok.component === 'leftright'
 	    	</div>
 		</div>
     </section>
-
-  {LeftRight && <StoryblokComponent blok={LeftRight} />}
 
     <section class="align-middle img-left">
     	<div class="ipu">
