@@ -59,7 +59,7 @@
             "statusCode": 301
         },
         {
-            "source": "/service/tech-seo-audit",
+            "source": "/services/tech-seo-audit",
             "destination": "/services/technical-seo-audit",
             "statusCode": 301
         },
@@ -509,7 +509,7 @@
             "statusCode": 301
         },
         {
-            "source": "/ccontact-us",
+            "source": "/contact-us",
             "destination": "/contact",
             "statusCode": 301
         },
