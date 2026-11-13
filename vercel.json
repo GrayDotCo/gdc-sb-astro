@@ -59,6 +59,16 @@
             "statusCode": 301
         },
         {
+            "source": "/service/tech-seo-audit",
+            "destination": "/services/technical-seo-audit",
+            "statusCode": 301
+        },
+        {
+            "source": "/services/ai-audit",
+            "destination": "/services/ai-audits",
+            "statusCode": 301
+        },
+        {
             "source": "/ai-impact",
             "destination": "/ai-impact-seo",
             "statusCode": 301
@@ -75,6 +85,11 @@
         },
         {
             "source": "/roadmap",
+            "destination": "/blog/how-to-build-seo-roadmap",
+            "statusCode": 301
+        },
+        {
+            "source": "/blog/how-to-build",
             "destination": "/blog/how-to-build-seo-roadmap",
             "statusCode": 301
         },
@@ -494,6 +509,11 @@
             "statusCode": 301
         },
         {
+            "source": "/ccontact-us",
+            "destination": "/contact",
+            "statusCode": 301
+        },
+        {
             "source": "/blog/rss.xml",
             "destination": "/blog",
             "statusCode": 301
@@ -505,6 +525,11 @@
         },
         {
             "source": "/blog/seo-product-requirements-how-to-template%C2%A0",
+            "destination": "/blog/seo-product-requirements-how-to-template",
+            "statusCode": 301
+        },
+        {
+            "source": "/blog/seo-product-",
             "destination": "/blog/seo-product-requirements-how-to-template",
             "statusCode": 301
         },
@@ -551,6 +576,11 @@
         {
             "source": "/resume",
             "destination": "/team",
+            "statusCode": 301
+        },
+        {
+            "source": "/team/tory-gray",
+            "destination": "/team/founder-tory-gray",
             "statusCode": 301
         },
         {
@@ -1578,6 +1608,11 @@
             "destination": "/blog/seo-guide-crawling-indexing-robots-txt-robots-meta-canonicals",
             "statusCode": 301
         },
+         {
+            "source": "/stories/launch-new-seo-",
+            "destination": "/blog",
+            "statusCode": 301
+        },
         {
             "source": "/blog/webinar-technical-optimization-for-ai-search",
             "destination": "https://www.youtube.com/watch?v=Gi7tWAib8ZI",
@@ -1606,6 +1641,51 @@
         {
             "source": "/services/",
             "destination": "/services/seo",
+            "statusCode": 301
+        },
+        {
+            "source": "/services/paid-",
+            "destination": "/services/paid-search",
+            "statusCode": 301
+        },
+        {
+            "source": "/tables-charts-more",
+            "destination": "/blog/ai-table-data-citations",
+            "statusCode": 301
+        },
+        {
+            "source": "/src/image-1.src",
+            "destination": "/blog/ai-table-data-citations",
+            "statusCode": 301
+        },
+        {
+            "source": "/images",
+            "destination": "/blog/ai-table-data-citations",
+            "statusCode": 301
+        },
+        {
+            "source": "/image-1",
+            "destination": "/blog/ai-table-data-citations",
+            "statusCode": 301
+        },
+        {
+            "source": "/page-3-rejtou",
+            "destination": "/blog/ai-table-data-citations",
+            "statusCode": 301
+        },
+        {
+            "source": "/ai-seo-testing",
+            "destination": "/resources/js-seo-chrome-extension",
+            "statusCode": 301
+        },
+        {
+            "source": "/Her",
+            "destination": "/",
+            "statusCode": 301
+        },
+        {
+            "source": "/resources/ai-difference-engine-extension",
+            "destination": "/resources/ai-difference-engine",
             "statusCode": 301
         },
         {
